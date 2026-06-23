@@ -46,7 +46,7 @@ def web_loader(jop_link):
 
 def prepare_model():
     load_dotenv()
-    llama_key = os.getenv("llama-70b-key")
+    llama_key = os.getenv("GROQ_API_KEY")
     if not llama_key:
         raise ValueError("Llama API key not found in environment. Please check your .env file.")
     try:

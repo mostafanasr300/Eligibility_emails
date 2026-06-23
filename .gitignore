@@ -13,9 +13,7 @@ __pycache__/
 .idea/
 .vscode/
 
-# Local databases and models (if large/unnecessary for repo)
-# NOTE: If you need vectorstore in the Docker image, do NOT ignore it here!
-# Wait, for HF spaces, we WANT vectorstore pushed. So do NOT ignore vectorstore/
+# for HF spaces, we WANT vectorstore pushed.
 .db_cache/
 model-saved/
 tokenizer-saved/

@@ -42,11 +42,11 @@ The ranking system is the core of this application. It works by querying two com
 
 The application relies on `Data&relation.txt` as its source of truth. When the application starts, it reads this file, structures it, and hydrates both Neo4j and ChromaDB.
 
-**The CI/CD Flow (GitHub Actions + Render):**
+**The CI/CD Flow (GitHub Actions + Hugging Face Spaces):**
 1. **Validation:** On every push, GitHub Actions runs Pytest (Unit/Integration tests), Flake8 (Linting), and Bandit (Security Scanning) utilizing external keys via GitHub Secrets.
 2. **Containerization:** The code is packaged into a Docker Image and pushed to the GitHub Container Registry (GHCR).
-3. **Deployment:** GitHub Actions pings a Render Deploy Webhook. Render pulls the latest image and spins up the container.
-4. **Persistence:** The production container mounts a Persistent Disk to `./chroma_db`. The Smart Cache and ChromaDB data live here, surviving all deployments and saving massive amounts of compute time.
+3. **Deployment:** GitHub Actions pings the Hugging Face Spaces API to restart the Space. Hugging Face pulls the latest image and spins up the container.
+4. **Data Persistence:** The local `chroma_db` is committed to the repository and baked directly into the Docker image. Because Hugging Face Spaces provides free ephemeral hosting, any new data added at runtime is reset upon restart, but the baked-in database is always preserved!
 
 ---
 
@@ -76,13 +76,17 @@ Running with Docker ensures you have the exact same environment as production.
    docker build -t hybrid-rag-app .
    ```
 
-4. **Run the Container (with Persistent Volume):**
+4. **Run the Container Locally:**
+   The `Dockerfile` exposes port `7860` because that is strictly required by Hugging Face Spaces. To access it locally on `8502`, map the ports like this:
    ```bash
-   docker run -p 8502:8502 --env-file .env -v ${PWD}/chroma_db:/app/chroma_db hybrid-rag-app
+   docker run -p 8502:7860 --env-file .env -v ${PWD}/chroma_db:/app/chroma_db hybrid-rag-app
    ```
    *Note: The `-v` flag maps the database and cache to your local hard drive so your data survives container restarts!*
 
 5. **Access the App:** Open your browser and navigate to `http://localhost:8502`.
+
+### Deploying to Hugging Face Spaces
+Hugging Face Spaces natively routes traffic to Docker containers on port `7860`. When you deploy your GHCR image to Hugging Face, it will automatically detect the exposed `7860` port and serve your application to the public for free!
 
 ### Option 2: Running Locally (Python VENV)
 
