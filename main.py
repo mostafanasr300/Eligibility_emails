@@ -1,5 +1,5 @@
 # Note: `chromadb` is optional and used by other modules; avoid importing at module import time
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
 import os
 import json
