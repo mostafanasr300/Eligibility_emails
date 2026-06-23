@@ -1,0 +1,12 @@
+langchain
+langchain-community
+langchain-groq
+chromadb
+python-dotenv
+streamlit
+pandas
+beautifulsoup4
+neo4j
+langgraph
+langchain-experimental
+ddgs

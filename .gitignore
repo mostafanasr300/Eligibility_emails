@@ -1,0 +1,28 @@
+# Virtual environments
+venv/
+env/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDEs
+.idea/
+.vscode/
+
+# Local databases and models (if large/unnecessary for repo)
+# NOTE: If you need vectorstore in the Docker image, do NOT ignore it here!
+# Wait, for HF spaces, we WANT vectorstore pushed. So do NOT ignore vectorstore/
+.db_cache/
+model-saved/
+tokenizer-saved/
+
+# pytest
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
