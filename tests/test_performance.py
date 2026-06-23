@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from main import apply_query
 from CHromdb import creat_db
 
+
 def test_hybrid_query_performance(benchmark):
     collection = creat_db("Data&relation.txt")
 
