@@ -9446,7 +9446,7 @@
         ]
     },
     {
-        "course_id": "SAMP-101",
+        "course_id": "CRS-226",
         "title": "Spring Boot Complete Professional Course",
         "url": "https://example-learning.com/courses/spring-boot",
         "platform": "SamplePlatform",
@@ -9467,34 +9467,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-101",
+                "source": "CRS-226",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-101",
+                "source": "CRS-226",
                 "type": "TEACHES_DOMAIN",
                 "target": "Backend Development"
             },
             {
-                "source": "SAMP-101",
+                "source": "CRS-226",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Java"
             },
             {
-                "source": "SAMP-101",
+                "source": "CRS-226",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Spring Boot"
             },
             {
-                "source": "SAMP-101",
+                "source": "CRS-226",
                 "type": "TEACHES_DATABASE",
                 "target": "PostgreSQL"
             }
         ]
     },
     {
-        "course_id": "SAMP-102",
+        "course_id": "CRS-227",
         "title": "ASP.NET Core Complete Professional Course",
         "url": "https://example-learning.com/courses/aspnet-core",
         "platform": "SamplePlatform",
@@ -9515,34 +9515,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-102",
+                "source": "CRS-227",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-102",
+                "source": "CRS-227",
                 "type": "TEACHES_DOMAIN",
                 "target": "Backend Development"
             },
             {
-                "source": "SAMP-102",
+                "source": "CRS-227",
                 "type": "TEACHES_LANGUAGE",
                 "target": "C#"
             },
             {
-                "source": "SAMP-102",
+                "source": "CRS-227",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "ASP.NET Core"
             },
             {
-                "source": "SAMP-102",
+                "source": "CRS-227",
                 "type": "TEACHES_DATABASE",
                 "target": "SQL Server"
             }
         ]
     },
     {
-        "course_id": "SAMP-103",
+        "course_id": "CRS-228",
         "title": "Gin Complete Professional Course",
         "url": "https://example-learning.com/courses/gin",
         "platform": "SamplePlatform",
@@ -9563,34 +9563,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-103",
+                "source": "CRS-228",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-103",
+                "source": "CRS-228",
                 "type": "TEACHES_DOMAIN",
                 "target": "Backend Development"
             },
             {
-                "source": "SAMP-103",
+                "source": "CRS-228",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Go"
             },
             {
-                "source": "SAMP-103",
+                "source": "CRS-228",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Gin"
             },
             {
-                "source": "SAMP-103",
+                "source": "CRS-228",
                 "type": "TEACHES_DATABASE",
                 "target": "PostgreSQL"
             }
         ]
     },
     {
-        "course_id": "SAMP-104",
+        "course_id": "CRS-229",
         "title": "Actix Complete Professional Course",
         "url": "https://example-learning.com/courses/actix",
         "platform": "SamplePlatform",
@@ -9611,34 +9611,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-104",
+                "source": "CRS-229",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-104",
+                "source": "CRS-229",
                 "type": "TEACHES_DOMAIN",
                 "target": "Backend Development"
             },
             {
-                "source": "SAMP-104",
+                "source": "CRS-229",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Rust"
             },
             {
-                "source": "SAMP-104",
+                "source": "CRS-229",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Actix"
             },
             {
-                "source": "SAMP-104",
+                "source": "CRS-229",
                 "type": "TEACHES_DATABASE",
                 "target": "PostgreSQL"
             }
         ]
     },
     {
-        "course_id": "SAMP-105",
+        "course_id": "CRS-230",
         "title": "FastAPI Complete Professional Course",
         "url": "https://example-learning.com/courses/fastapi",
         "platform": "SamplePlatform",
@@ -9659,34 +9659,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-105",
+                "source": "CRS-230",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-105",
+                "source": "CRS-230",
                 "type": "TEACHES_DOMAIN",
                 "target": "Backend Development"
             },
             {
-                "source": "SAMP-105",
+                "source": "CRS-230",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-105",
+                "source": "CRS-230",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "FastAPI"
             },
             {
-                "source": "SAMP-105",
+                "source": "CRS-230",
                 "type": "TEACHES_DATABASE",
                 "target": "MongoDB"
             }
         ]
     },
     {
-        "course_id": "SAMP-106",
+        "course_id": "CRS-231",
         "title": "Docker Complete Professional Course",
         "url": "https://example-learning.com/courses/docker",
         "platform": "SamplePlatform",
@@ -9705,29 +9705,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-106",
+                "source": "CRS-231",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-106",
+                "source": "CRS-231",
                 "type": "TEACHES_DOMAIN",
                 "target": "DevOps"
             },
             {
-                "source": "SAMP-106",
+                "source": "CRS-231",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Bash"
             },
             {
-                "source": "SAMP-106",
+                "source": "CRS-231",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Docker"
             }
         ]
     },
     {
-        "course_id": "SAMP-107",
+        "course_id": "CRS-232",
         "title": "Kubernetes Complete Professional Course",
         "url": "https://example-learning.com/courses/kubernetes",
         "platform": "SamplePlatform",
@@ -9746,29 +9746,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-107",
+                "source": "CRS-232",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-107",
+                "source": "CRS-232",
                 "type": "TEACHES_DOMAIN",
                 "target": "DevOps"
             },
             {
-                "source": "SAMP-107",
+                "source": "CRS-232",
                 "type": "TEACHES_LANGUAGE",
                 "target": "YAML"
             },
             {
-                "source": "SAMP-107",
+                "source": "CRS-232",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Kubernetes"
             }
         ]
     },
     {
-        "course_id": "SAMP-108",
+        "course_id": "CRS-233",
         "title": "Terraform Complete Professional Course",
         "url": "https://example-learning.com/courses/terraform",
         "platform": "SamplePlatform",
@@ -9787,29 +9787,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-108",
+                "source": "CRS-233",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-108",
+                "source": "CRS-233",
                 "type": "TEACHES_DOMAIN",
                 "target": "DevOps"
             },
             {
-                "source": "SAMP-108",
+                "source": "CRS-233",
                 "type": "TEACHES_LANGUAGE",
                 "target": "HCL"
             },
             {
-                "source": "SAMP-108",
+                "source": "CRS-233",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Terraform"
             }
         ]
     },
     {
-        "course_id": "SAMP-109",
+        "course_id": "CRS-234",
         "title": "Ansible Complete Professional Course",
         "url": "https://example-learning.com/courses/ansible",
         "platform": "SamplePlatform",
@@ -9828,29 +9828,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-109",
+                "source": "CRS-234",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-109",
+                "source": "CRS-234",
                 "type": "TEACHES_DOMAIN",
                 "target": "DevOps"
             },
             {
-                "source": "SAMP-109",
+                "source": "CRS-234",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Bash"
             },
             {
-                "source": "SAMP-109",
+                "source": "CRS-234",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Ansible"
             }
         ]
     },
     {
-        "course_id": "SAMP-110",
+        "course_id": "CRS-235",
         "title": "ArgoCD Complete Professional Course",
         "url": "https://example-learning.com/courses/argocd",
         "platform": "SamplePlatform",
@@ -9869,29 +9869,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-110",
+                "source": "CRS-235",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-110",
+                "source": "CRS-235",
                 "type": "TEACHES_DOMAIN",
                 "target": "DevOps"
             },
             {
-                "source": "SAMP-110",
+                "source": "CRS-235",
                 "type": "TEACHES_LANGUAGE",
                 "target": "YAML"
             },
             {
-                "source": "SAMP-110",
+                "source": "CRS-235",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "ArgoCD"
             }
         ]
     },
     {
-        "course_id": "SAMP-111",
+        "course_id": "CRS-236",
         "title": "AWS Lambda Complete Professional Course",
         "url": "https://example-learning.com/courses/aws-lambda",
         "platform": "SamplePlatform",
@@ -9912,34 +9912,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-111",
+                "source": "CRS-236",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-111",
+                "source": "CRS-236",
                 "type": "TEACHES_DOMAIN",
                 "target": "Cloud Engineering"
             },
             {
-                "source": "SAMP-111",
+                "source": "CRS-236",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-111",
+                "source": "CRS-236",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "AWS Lambda"
             },
             {
-                "source": "SAMP-111",
+                "source": "CRS-236",
                 "type": "TEACHES_DATABASE",
                 "target": "DynamoDB"
             }
         ]
     },
     {
-        "course_id": "SAMP-112",
+        "course_id": "CRS-237",
         "title": "Azure Functions Complete Professional Course",
         "url": "https://example-learning.com/courses/azure-functions",
         "platform": "SamplePlatform",
@@ -9960,34 +9960,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-112",
+                "source": "CRS-237",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-112",
+                "source": "CRS-237",
                 "type": "TEACHES_DOMAIN",
                 "target": "Cloud Engineering"
             },
             {
-                "source": "SAMP-112",
+                "source": "CRS-237",
                 "type": "TEACHES_LANGUAGE",
                 "target": "PowerShell"
             },
             {
-                "source": "SAMP-112",
+                "source": "CRS-237",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Azure Functions"
             },
             {
-                "source": "SAMP-112",
+                "source": "CRS-237",
                 "type": "TEACHES_DATABASE",
                 "target": "Cosmos DB"
             }
         ]
     },
     {
-        "course_id": "SAMP-113",
+        "course_id": "CRS-238",
         "title": "Cloud Run Complete Professional Course",
         "url": "https://example-learning.com/courses/cloud-run",
         "platform": "SamplePlatform",
@@ -10008,34 +10008,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-113",
+                "source": "CRS-238",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-113",
+                "source": "CRS-238",
                 "type": "TEACHES_DOMAIN",
                 "target": "Cloud Engineering"
             },
             {
-                "source": "SAMP-113",
+                "source": "CRS-238",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-113",
+                "source": "CRS-238",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Cloud Run"
             },
             {
-                "source": "SAMP-113",
+                "source": "CRS-238",
                 "type": "TEACHES_DATABASE",
                 "target": "BigQuery"
             }
         ]
     },
     {
-        "course_id": "SAMP-114",
+        "course_id": "CRS-239",
         "title": "CloudFormation Complete Professional Course",
         "url": "https://example-learning.com/courses/cloudformation",
         "platform": "SamplePlatform",
@@ -10056,34 +10056,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-114",
+                "source": "CRS-239",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-114",
+                "source": "CRS-239",
                 "type": "TEACHES_DOMAIN",
                 "target": "Cloud Engineering"
             },
             {
-                "source": "SAMP-114",
+                "source": "CRS-239",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-114",
+                "source": "CRS-239",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "CloudFormation"
             },
             {
-                "source": "SAMP-114",
+                "source": "CRS-239",
                 "type": "TEACHES_DATABASE",
                 "target": "RDS"
             }
         ]
     },
     {
-        "course_id": "SAMP-115",
+        "course_id": "CRS-240",
         "title": "Pulumi Complete Professional Course",
         "url": "https://example-learning.com/courses/pulumi",
         "platform": "SamplePlatform",
@@ -10104,34 +10104,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-115",
+                "source": "CRS-240",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-115",
+                "source": "CRS-240",
                 "type": "TEACHES_DOMAIN",
                 "target": "Cloud Engineering"
             },
             {
-                "source": "SAMP-115",
+                "source": "CRS-240",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-115",
+                "source": "CRS-240",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Pulumi"
             },
             {
-                "source": "SAMP-115",
+                "source": "CRS-240",
                 "type": "TEACHES_DATABASE",
                 "target": "PostgreSQL"
             }
         ]
     },
     {
-        "course_id": "SAMP-116",
+        "course_id": "CRS-241",
         "title": "Apache Spark Complete Professional Course",
         "url": "https://example-learning.com/courses/apache-spark",
         "platform": "SamplePlatform",
@@ -10152,34 +10152,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-116",
+                "source": "CRS-241",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-116",
+                "source": "CRS-241",
                 "type": "TEACHES_DOMAIN",
                 "target": "Data Engineering"
             },
             {
-                "source": "SAMP-116",
+                "source": "CRS-241",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-116",
+                "source": "CRS-241",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Apache Spark"
             },
             {
-                "source": "SAMP-116",
+                "source": "CRS-241",
                 "type": "TEACHES_DATABASE",
                 "target": "Snowflake"
             }
         ]
     },
     {
-        "course_id": "SAMP-117",
+        "course_id": "CRS-242",
         "title": "Apache Kafka Complete Professional Course",
         "url": "https://example-learning.com/courses/apache-kafka",
         "platform": "SamplePlatform",
@@ -10200,34 +10200,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-117",
+                "source": "CRS-242",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-117",
+                "source": "CRS-242",
                 "type": "TEACHES_DOMAIN",
                 "target": "Data Engineering"
             },
             {
-                "source": "SAMP-117",
+                "source": "CRS-242",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Java"
             },
             {
-                "source": "SAMP-117",
+                "source": "CRS-242",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Apache Kafka"
             },
             {
-                "source": "SAMP-117",
+                "source": "CRS-242",
                 "type": "TEACHES_DATABASE",
                 "target": "PostgreSQL"
             }
         ]
     },
     {
-        "course_id": "SAMP-118",
+        "course_id": "CRS-243",
         "title": "Apache Airflow Complete Professional Course",
         "url": "https://example-learning.com/courses/apache-airflow",
         "platform": "SamplePlatform",
@@ -10248,34 +10248,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-118",
+                "source": "CRS-243",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-118",
+                "source": "CRS-243",
                 "type": "TEACHES_DOMAIN",
                 "target": "Data Engineering"
             },
             {
-                "source": "SAMP-118",
+                "source": "CRS-243",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-118",
+                "source": "CRS-243",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Apache Airflow"
             },
             {
-                "source": "SAMP-118",
+                "source": "CRS-243",
                 "type": "TEACHES_DATABASE",
                 "target": "Snowflake"
             }
         ]
     },
     {
-        "course_id": "SAMP-119",
+        "course_id": "CRS-244",
         "title": "Databricks Complete Professional Course",
         "url": "https://example-learning.com/courses/databricks",
         "platform": "SamplePlatform",
@@ -10296,34 +10296,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-119",
+                "source": "CRS-244",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-119",
+                "source": "CRS-244",
                 "type": "TEACHES_DOMAIN",
                 "target": "Data Engineering"
             },
             {
-                "source": "SAMP-119",
+                "source": "CRS-244",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-119",
+                "source": "CRS-244",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Databricks"
             },
             {
-                "source": "SAMP-119",
+                "source": "CRS-244",
                 "type": "TEACHES_DATABASE",
                 "target": "Delta Lake"
             }
         ]
     },
     {
-        "course_id": "SAMP-120",
+        "course_id": "CRS-245",
         "title": "dbt Complete Professional Course",
         "url": "https://example-learning.com/courses/dbt",
         "platform": "SamplePlatform",
@@ -10344,34 +10344,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-120",
+                "source": "CRS-245",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-120",
+                "source": "CRS-245",
                 "type": "TEACHES_DOMAIN",
                 "target": "Data Engineering"
             },
             {
-                "source": "SAMP-120",
+                "source": "CRS-245",
                 "type": "TEACHES_LANGUAGE",
                 "target": "SQL"
             },
             {
-                "source": "SAMP-120",
+                "source": "CRS-245",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "dbt"
             },
             {
-                "source": "SAMP-120",
+                "source": "CRS-245",
                 "type": "TEACHES_DATABASE",
                 "target": "BigQuery"
             }
         ]
     },
     {
-        "course_id": "SAMP-121",
+        "course_id": "CRS-246",
         "title": "Pandas Complete Professional Course",
         "url": "https://example-learning.com/courses/pandas",
         "platform": "SamplePlatform",
@@ -10392,34 +10392,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-121",
+                "source": "CRS-246",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-121",
+                "source": "CRS-246",
                 "type": "TEACHES_DOMAIN",
                 "target": "Data Science"
             },
             {
-                "source": "SAMP-121",
+                "source": "CRS-246",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-121",
+                "source": "CRS-246",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Pandas"
             },
             {
-                "source": "SAMP-121",
+                "source": "CRS-246",
                 "type": "TEACHES_DATABASE",
                 "target": "PostgreSQL"
             }
         ]
     },
     {
-        "course_id": "SAMP-122",
+        "course_id": "CRS-247",
         "title": "NumPy Complete Professional Course",
         "url": "https://example-learning.com/courses/numpy",
         "platform": "SamplePlatform",
@@ -10438,29 +10438,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-122",
+                "source": "CRS-247",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-122",
+                "source": "CRS-247",
                 "type": "TEACHES_DOMAIN",
                 "target": "Data Science"
             },
             {
-                "source": "SAMP-122",
+                "source": "CRS-247",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-122",
+                "source": "CRS-247",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "NumPy"
             }
         ]
     },
     {
-        "course_id": "SAMP-123",
+        "course_id": "CRS-248",
         "title": "SciPy Complete Professional Course",
         "url": "https://example-learning.com/courses/scipy",
         "platform": "SamplePlatform",
@@ -10479,29 +10479,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-123",
+                "source": "CRS-248",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-123",
+                "source": "CRS-248",
                 "type": "TEACHES_DOMAIN",
                 "target": "Data Science"
             },
             {
-                "source": "SAMP-123",
+                "source": "CRS-248",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-123",
+                "source": "CRS-248",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "SciPy"
             }
         ]
     },
     {
-        "course_id": "SAMP-124",
+        "course_id": "CRS-249",
         "title": "Scikit-Learn Complete Professional Course",
         "url": "https://example-learning.com/courses/scikit-learn",
         "platform": "SamplePlatform",
@@ -10522,34 +10522,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-124",
+                "source": "CRS-249",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-124",
+                "source": "CRS-249",
                 "type": "TEACHES_DOMAIN",
                 "target": "Machine Learning"
             },
             {
-                "source": "SAMP-124",
+                "source": "CRS-249",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-124",
+                "source": "CRS-249",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Scikit-Learn"
             },
             {
-                "source": "SAMP-124",
+                "source": "CRS-249",
                 "type": "TEACHES_DATABASE",
                 "target": "MongoDB"
             }
         ]
     },
     {
-        "course_id": "SAMP-125",
+        "course_id": "CRS-250",
         "title": "TensorFlow Complete Professional Course",
         "url": "https://example-learning.com/courses/tensorflow",
         "platform": "SamplePlatform",
@@ -10568,29 +10568,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-125",
+                "source": "CRS-250",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-125",
+                "source": "CRS-250",
                 "type": "TEACHES_DOMAIN",
                 "target": "Machine Learning"
             },
             {
-                "source": "SAMP-125",
+                "source": "CRS-250",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-125",
+                "source": "CRS-250",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "TensorFlow"
             }
         ]
     },
     {
-        "course_id": "SAMP-126",
+        "course_id": "CRS-251",
         "title": "PyTorch Complete Professional Course",
         "url": "https://example-learning.com/courses/pytorch",
         "platform": "SamplePlatform",
@@ -10609,29 +10609,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-126",
+                "source": "CRS-251",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-126",
+                "source": "CRS-251",
                 "type": "TEACHES_DOMAIN",
                 "target": "Machine Learning"
             },
             {
-                "source": "SAMP-126",
+                "source": "CRS-251",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-126",
+                "source": "CRS-251",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "PyTorch"
             }
         ]
     },
     {
-        "course_id": "SAMP-127",
+        "course_id": "CRS-252",
         "title": "XGBoost Complete Professional Course",
         "url": "https://example-learning.com/courses/xgboost",
         "platform": "SamplePlatform",
@@ -10650,29 +10650,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-127",
+                "source": "CRS-252",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-127",
+                "source": "CRS-252",
                 "type": "TEACHES_DOMAIN",
                 "target": "Machine Learning"
             },
             {
-                "source": "SAMP-127",
+                "source": "CRS-252",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-127",
+                "source": "CRS-252",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "XGBoost"
             }
         ]
     },
     {
-        "course_id": "SAMP-128",
+        "course_id": "CRS-253",
         "title": "LangChain Complete Professional Course",
         "url": "https://example-learning.com/courses/langchain",
         "platform": "SamplePlatform",
@@ -10693,34 +10693,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-128",
+                "source": "CRS-253",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-128",
+                "source": "CRS-253",
                 "type": "TEACHES_DOMAIN",
                 "target": "AI Engineering"
             },
             {
-                "source": "SAMP-128",
+                "source": "CRS-253",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-128",
+                "source": "CRS-253",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "LangChain"
             },
             {
-                "source": "SAMP-128",
+                "source": "CRS-253",
                 "type": "TEACHES_DATABASE",
                 "target": "Pinecone"
             }
         ]
     },
     {
-        "course_id": "SAMP-129",
+        "course_id": "CRS-254",
         "title": "LlamaIndex Complete Professional Course",
         "url": "https://example-learning.com/courses/llamaindex",
         "platform": "SamplePlatform",
@@ -10741,34 +10741,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-129",
+                "source": "CRS-254",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-129",
+                "source": "CRS-254",
                 "type": "TEACHES_DOMAIN",
                 "target": "AI Engineering"
             },
             {
-                "source": "SAMP-129",
+                "source": "CRS-254",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-129",
+                "source": "CRS-254",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "LlamaIndex"
             },
             {
-                "source": "SAMP-129",
+                "source": "CRS-254",
                 "type": "TEACHES_DATABASE",
                 "target": "Weaviate"
             }
         ]
     },
     {
-        "course_id": "SAMP-130",
+        "course_id": "CRS-255",
         "title": "MLflow Complete Professional Course",
         "url": "https://example-learning.com/courses/mlflow",
         "platform": "SamplePlatform",
@@ -10789,34 +10789,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-130",
+                "source": "CRS-255",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-130",
+                "source": "CRS-255",
                 "type": "TEACHES_DOMAIN",
                 "target": "AI Engineering"
             },
             {
-                "source": "SAMP-130",
+                "source": "CRS-255",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-130",
+                "source": "CRS-255",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "MLflow"
             },
             {
-                "source": "SAMP-130",
+                "source": "CRS-255",
                 "type": "TEACHES_DATABASE",
                 "target": "PostgreSQL"
             }
         ]
     },
     {
-        "course_id": "SAMP-131",
+        "course_id": "CRS-256",
         "title": "Haystack Complete Professional Course",
         "url": "https://example-learning.com/courses/haystack",
         "platform": "SamplePlatform",
@@ -10837,34 +10837,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-131",
+                "source": "CRS-256",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-131",
+                "source": "CRS-256",
                 "type": "TEACHES_DOMAIN",
                 "target": "AI Engineering"
             },
             {
-                "source": "SAMP-131",
+                "source": "CRS-256",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-131",
+                "source": "CRS-256",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Haystack"
             },
             {
-                "source": "SAMP-131",
+                "source": "CRS-256",
                 "type": "TEACHES_DATABASE",
                 "target": "Qdrant"
             }
         ]
     },
     {
-        "course_id": "SAMP-132",
+        "course_id": "CRS-257",
         "title": "Metasploit Complete Professional Course",
         "url": "https://example-learning.com/courses/metasploit",
         "platform": "SamplePlatform",
@@ -10883,29 +10883,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-132",
+                "source": "CRS-257",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-132",
+                "source": "CRS-257",
                 "type": "TEACHES_DOMAIN",
                 "target": "Cybersecurity"
             },
             {
-                "source": "SAMP-132",
+                "source": "CRS-257",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-132",
+                "source": "CRS-257",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Metasploit"
             }
         ]
     },
     {
-        "course_id": "SAMP-133",
+        "course_id": "CRS-258",
         "title": "Splunk Complete Professional Course",
         "url": "https://example-learning.com/courses/splunk",
         "platform": "SamplePlatform",
@@ -10924,29 +10924,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-133",
+                "source": "CRS-258",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-133",
+                "source": "CRS-258",
                 "type": "TEACHES_DOMAIN",
                 "target": "Cybersecurity"
             },
             {
-                "source": "SAMP-133",
+                "source": "CRS-258",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-133",
+                "source": "CRS-258",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Splunk"
             }
         ]
     },
     {
-        "course_id": "SAMP-134",
+        "course_id": "CRS-259",
         "title": "Open Policy Agent Complete Professional Course",
         "url": "https://example-learning.com/courses/open-policy-agent",
         "platform": "SamplePlatform",
@@ -10965,29 +10965,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-134",
+                "source": "CRS-259",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-134",
+                "source": "CRS-259",
                 "type": "TEACHES_DOMAIN",
                 "target": "Cybersecurity"
             },
             {
-                "source": "SAMP-134",
+                "source": "CRS-259",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-134",
+                "source": "CRS-259",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Open Policy Agent"
             }
         ]
     },
     {
-        "course_id": "SAMP-135",
+        "course_id": "CRS-260",
         "title": "Wireshark Complete Professional Course",
         "url": "https://example-learning.com/courses/wireshark",
         "platform": "SamplePlatform",
@@ -11006,29 +11006,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-135",
+                "source": "CRS-260",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-135",
+                "source": "CRS-260",
                 "type": "TEACHES_DOMAIN",
                 "target": "Cybersecurity"
             },
             {
-                "source": "SAMP-135",
+                "source": "CRS-260",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-135",
+                "source": "CRS-260",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Wireshark"
             }
         ]
     },
     {
-        "course_id": "SAMP-136",
+        "course_id": "CRS-261",
         "title": "Burp Suite Complete Professional Course",
         "url": "https://example-learning.com/courses/burp-suite",
         "platform": "SamplePlatform",
@@ -11047,29 +11047,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-136",
+                "source": "CRS-261",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-136",
+                "source": "CRS-261",
                 "type": "TEACHES_DOMAIN",
                 "target": "Cybersecurity"
             },
             {
-                "source": "SAMP-136",
+                "source": "CRS-261",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Python"
             },
             {
-                "source": "SAMP-136",
+                "source": "CRS-261",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Burp Suite"
             }
         ]
     },
     {
-        "course_id": "SAMP-137",
+        "course_id": "CRS-262",
         "title": "Android SDK Complete Professional Course",
         "url": "https://example-learning.com/courses/android-sdk",
         "platform": "SamplePlatform",
@@ -11090,34 +11090,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-137",
+                "source": "CRS-262",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-137",
+                "source": "CRS-262",
                 "type": "TEACHES_DOMAIN",
                 "target": "Mobile Development"
             },
             {
-                "source": "SAMP-137",
+                "source": "CRS-262",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Kotlin"
             },
             {
-                "source": "SAMP-137",
+                "source": "CRS-262",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Android SDK"
             },
             {
-                "source": "SAMP-137",
+                "source": "CRS-262",
                 "type": "TEACHES_DATABASE",
                 "target": "SQLite"
             }
         ]
     },
     {
-        "course_id": "SAMP-138",
+        "course_id": "CRS-263",
         "title": "SwiftUI Complete Professional Course",
         "url": "https://example-learning.com/courses/swiftui",
         "platform": "SamplePlatform",
@@ -11138,34 +11138,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-138",
+                "source": "CRS-263",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-138",
+                "source": "CRS-263",
                 "type": "TEACHES_DOMAIN",
                 "target": "Mobile Development"
             },
             {
-                "source": "SAMP-138",
+                "source": "CRS-263",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Swift"
             },
             {
-                "source": "SAMP-138",
+                "source": "CRS-263",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "SwiftUI"
             },
             {
-                "source": "SAMP-138",
+                "source": "CRS-263",
                 "type": "TEACHES_DATABASE",
                 "target": "Core Data"
             }
         ]
     },
     {
-        "course_id": "SAMP-139",
+        "course_id": "CRS-264",
         "title": "Flutter Complete Professional Course",
         "url": "https://example-learning.com/courses/flutter",
         "platform": "SamplePlatform",
@@ -11186,34 +11186,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-139",
+                "source": "CRS-264",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-139",
+                "source": "CRS-264",
                 "type": "TEACHES_DOMAIN",
                 "target": "Mobile Development"
             },
             {
-                "source": "SAMP-139",
+                "source": "CRS-264",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Dart"
             },
             {
-                "source": "SAMP-139",
+                "source": "CRS-264",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Flutter"
             },
             {
-                "source": "SAMP-139",
+                "source": "CRS-264",
                 "type": "TEACHES_DATABASE",
                 "target": "Firebase"
             }
         ]
     },
     {
-        "course_id": "SAMP-140",
+        "course_id": "CRS-265",
         "title": "React Native Complete Professional Course",
         "url": "https://example-learning.com/courses/react-native",
         "platform": "SamplePlatform",
@@ -11234,34 +11234,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-140",
+                "source": "CRS-265",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-140",
+                "source": "CRS-265",
                 "type": "TEACHES_DOMAIN",
                 "target": "Mobile Development"
             },
             {
-                "source": "SAMP-140",
+                "source": "CRS-265",
                 "type": "TEACHES_LANGUAGE",
                 "target": "JavaScript"
             },
             {
-                "source": "SAMP-140",
+                "source": "CRS-265",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "React Native"
             },
             {
-                "source": "SAMP-140",
+                "source": "CRS-265",
                 "type": "TEACHES_DATABASE",
                 "target": "MongoDB"
             }
         ]
     },
     {
-        "course_id": "SAMP-141",
+        "course_id": "CRS-266",
         "title": "Prometheus Complete Professional Course",
         "url": "https://example-learning.com/courses/prometheus",
         "platform": "SamplePlatform",
@@ -11280,29 +11280,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-141",
+                "source": "CRS-266",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-141",
+                "source": "CRS-266",
                 "type": "TEACHES_DOMAIN",
                 "target": "SRE"
             },
             {
-                "source": "SAMP-141",
+                "source": "CRS-266",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Go"
             },
             {
-                "source": "SAMP-141",
+                "source": "CRS-266",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Prometheus"
             }
         ]
     },
     {
-        "course_id": "SAMP-142",
+        "course_id": "CRS-267",
         "title": "Grafana Complete Professional Course",
         "url": "https://example-learning.com/courses/grafana",
         "platform": "SamplePlatform",
@@ -11321,29 +11321,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-142",
+                "source": "CRS-267",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-142",
+                "source": "CRS-267",
                 "type": "TEACHES_DOMAIN",
                 "target": "SRE"
             },
             {
-                "source": "SAMP-142",
+                "source": "CRS-267",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Go"
             },
             {
-                "source": "SAMP-142",
+                "source": "CRS-267",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Grafana"
             }
         ]
     },
     {
-        "course_id": "SAMP-143",
+        "course_id": "CRS-268",
         "title": "Ansible Complete Professional Course (SysAdmin)",
         "url": "https://example-learning.com/courses/ansible-sysadmin",
         "platform": "SamplePlatform",
@@ -11362,29 +11362,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-143",
+                "source": "CRS-268",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-143",
+                "source": "CRS-268",
                 "type": "TEACHES_DOMAIN",
                 "target": "System Administration"
             },
             {
-                "source": "SAMP-143",
+                "source": "CRS-268",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Bash"
             },
             {
-                "source": "SAMP-143",
+                "source": "CRS-268",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Ansible"
             }
         ]
     },
     {
-        "course_id": "SAMP-144",
+        "course_id": "CRS-269",
         "title": "Windows Server Complete Professional Course",
         "url": "https://example-learning.com/courses/windows-server",
         "platform": "SamplePlatform",
@@ -11403,29 +11403,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-144",
+                "source": "CRS-269",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-144",
+                "source": "CRS-269",
                 "type": "TEACHES_DOMAIN",
                 "target": "System Administration"
             },
             {
-                "source": "SAMP-144",
+                "source": "CRS-269",
                 "type": "TEACHES_LANGUAGE",
                 "target": "PowerShell"
             },
             {
-                "source": "SAMP-144",
+                "source": "CRS-269",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Windows Server"
             }
         ]
     },
     {
-        "course_id": "SAMP-145",
+        "course_id": "CRS-270",
         "title": "Selenium Complete Professional Course",
         "url": "https://example-learning.com/courses/selenium",
         "platform": "SamplePlatform",
@@ -11446,34 +11446,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-145",
+                "source": "CRS-270",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-145",
+                "source": "CRS-270",
                 "type": "TEACHES_DOMAIN",
                 "target": "QA Automation"
             },
             {
-                "source": "SAMP-145",
+                "source": "CRS-270",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Java"
             },
             {
-                "source": "SAMP-145",
+                "source": "CRS-270",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Selenium"
             },
             {
-                "source": "SAMP-145",
+                "source": "CRS-270",
                 "type": "TEACHES_DATABASE",
                 "target": "MySQL"
             }
         ]
     },
     {
-        "course_id": "SAMP-146",
+        "course_id": "CRS-271",
         "title": "Playwright Complete Professional Course",
         "url": "https://example-learning.com/courses/playwright",
         "platform": "SamplePlatform",
@@ -11494,34 +11494,34 @@
         },
         "relationships": [
             {
-                "source": "SAMP-146",
+                "source": "CRS-271",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-146",
+                "source": "CRS-271",
                 "type": "TEACHES_DOMAIN",
                 "target": "QA Automation"
             },
             {
-                "source": "SAMP-146",
+                "source": "CRS-271",
                 "type": "TEACHES_LANGUAGE",
                 "target": "TypeScript"
             },
             {
-                "source": "SAMP-146",
+                "source": "CRS-271",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Playwright"
             },
             {
-                "source": "SAMP-146",
+                "source": "CRS-271",
                 "type": "TEACHES_DATABASE",
                 "target": "PostgreSQL"
             }
         ]
     },
     {
-        "course_id": "SAMP-147",
+        "course_id": "CRS-272",
         "title": "FreeRTOS Complete Professional Course",
         "url": "https://example-learning.com/courses/freertos",
         "platform": "SamplePlatform",
@@ -11540,29 +11540,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-147",
+                "source": "CRS-272",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-147",
+                "source": "CRS-272",
                 "type": "TEACHES_DOMAIN",
                 "target": "Embedded Systems"
             },
             {
-                "source": "SAMP-147",
+                "source": "CRS-272",
                 "type": "TEACHES_LANGUAGE",
                 "target": "C"
             },
             {
-                "source": "SAMP-147",
+                "source": "CRS-272",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "FreeRTOS"
             }
         ]
     },
     {
-        "course_id": "SAMP-148",
+        "course_id": "CRS-273",
         "title": "Arduino Complete Professional Course",
         "url": "https://example-learning.com/courses/arduino",
         "platform": "SamplePlatform",
@@ -11581,29 +11581,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-148",
+                "source": "CRS-273",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-148",
+                "source": "CRS-273",
                 "type": "TEACHES_DOMAIN",
                 "target": "Embedded Systems"
             },
             {
-                "source": "SAMP-148",
+                "source": "CRS-273",
                 "type": "TEACHES_LANGUAGE",
                 "target": "C++"
             },
             {
-                "source": "SAMP-148",
+                "source": "CRS-273",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Arduino"
             }
         ]
     },
     {
-        "course_id": "SAMP-149",
+        "course_id": "CRS-274",
         "title": "Unity Complete Professional Course",
         "url": "https://example-learning.com/courses/unity",
         "platform": "SamplePlatform",
@@ -11622,29 +11622,29 @@
         },
         "relationships": [
             {
-                "source": "SAMP-149",
+                "source": "CRS-274",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-149",
+                "source": "CRS-274",
                 "type": "TEACHES_DOMAIN",
                 "target": "Game Development"
             },
             {
-                "source": "SAMP-149",
+                "source": "CRS-274",
                 "type": "TEACHES_LANGUAGE",
                 "target": "C#"
             },
             {
-                "source": "SAMP-149",
+                "source": "CRS-274",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Unity"
             }
         ]
     },
     {
-        "course_id": "SAMP-150",
+        "course_id": "CRS-275",
         "title": "Hardhat Complete Professional Course",
         "url": "https://example-learning.com/courses/hardhat",
         "platform": "SamplePlatform",
@@ -11665,27 +11665,27 @@
         },
         "relationships": [
             {
-                "source": "SAMP-150",
+                "source": "CRS-275",
                 "type": "HOSTED_ON",
                 "target": "SamplePlatform"
             },
             {
-                "source": "SAMP-150",
+                "source": "CRS-275",
                 "type": "TEACHES_DOMAIN",
                 "target": "Blockchain Development"
             },
             {
-                "source": "SAMP-150",
+                "source": "CRS-275",
                 "type": "TEACHES_LANGUAGE",
                 "target": "Solidity"
             },
             {
-                "source": "SAMP-150",
+                "source": "CRS-275",
                 "type": "TEACHES_FRAMEWORK",
                 "target": "Hardhat"
             },
             {
-                "source": "SAMP-150",
+                "source": "CRS-275",
                 "type": "TEACHES_DATABASE",
                 "target": "Ethereum"
             }

@@ -41,7 +41,7 @@ The ranking system is the core of this application. It works by querying two com
 ### Visualizing the Knowledge Graph
 To help you understand exactly *why* a course was recommended, the application features a built-in interactive visualizer. 
 
-[Explore the Interactive Knowledge Graph](file:///c:/Users/mosta/Python_Projects/langchin_emails/graph_viz_output.html)
+[Explore the Interactive Knowledge Graph](file:///c:/Users/mosta/Python_Projects/langchin_emails/graph_vis.html)
 
 This interactive map allows you to explore the Neo4j database directly from the web app. You can see how specific courses (purple nodes) branch out and connect to the underlying skills, frameworks, and languages (green nodes) they teach. This provides full transparency into the AI's decision-making process.
 
