@@ -46,7 +46,7 @@ def creat_db(data_paths=None, reset=False):
 
     # Normalize data_paths
     if data_paths is None:
-        data_paths = ["Data&relation.txt", "course_skill_graph_50_samples.json", "course_skill_graph_samples.json"]
+        data_paths = ["Data&relation.txt"]
     elif isinstance(data_paths, str):
         data_paths = [data_paths]
 

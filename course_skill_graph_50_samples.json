@@ -1,0 +1,980 @@
+[
+  {
+    "course_id": "SAMP-101",
+    "title": "Spring Boot Complete Professional Course",
+    "url": "https://example-learning.com/courses/spring-boot",
+    "platform": "SamplePlatform",
+    "domains": ["Backend Development"],
+    "tech_stack": {
+      "languages": ["Java"],
+      "frameworks_libraries": ["Spring Boot"],
+      "databases": ["PostgreSQL"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-101", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-101", "type": "TEACHES_DOMAIN", "target": "Backend Development"},
+      {"source": "SAMP-101", "type": "TEACHES_LANGUAGE", "target": "Java"},
+      {"source": "SAMP-101", "type": "TEACHES_FRAMEWORK", "target": "Spring Boot"},
+      {"source": "SAMP-101", "type": "TEACHES_DATABASE", "target": "PostgreSQL"}
+    ]
+  },
+  {
+    "course_id": "SAMP-102",
+    "title": "ASP.NET Core Complete Professional Course",
+    "url": "https://example-learning.com/courses/aspnet-core",
+    "platform": "SamplePlatform",
+    "domains": ["Backend Development"],
+    "tech_stack": {
+      "languages": ["C#"],
+      "frameworks_libraries": ["ASP.NET Core"],
+      "databases": ["SQL Server"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-102", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-102", "type": "TEACHES_DOMAIN", "target": "Backend Development"},
+      {"source": "SAMP-102", "type": "TEACHES_LANGUAGE", "target": "C#"},
+      {"source": "SAMP-102", "type": "TEACHES_FRAMEWORK", "target": "ASP.NET Core"},
+      {"source": "SAMP-102", "type": "TEACHES_DATABASE", "target": "SQL Server"}
+    ]
+  },
+  {
+    "course_id": "SAMP-103",
+    "title": "Gin Complete Professional Course",
+    "url": "https://example-learning.com/courses/gin",
+    "platform": "SamplePlatform",
+    "domains": ["Backend Development"],
+    "tech_stack": {
+      "languages": ["Go"],
+      "frameworks_libraries": ["Gin"],
+      "databases": ["PostgreSQL"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-103", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-103", "type": "TEACHES_DOMAIN", "target": "Backend Development"},
+      {"source": "SAMP-103", "type": "TEACHES_LANGUAGE", "target": "Go"},
+      {"source": "SAMP-103", "type": "TEACHES_FRAMEWORK", "target": "Gin"},
+      {"source": "SAMP-103", "type": "TEACHES_DATABASE", "target": "PostgreSQL"}
+    ]
+  },
+  {
+    "course_id": "SAMP-104",
+    "title": "Actix Complete Professional Course",
+    "url": "https://example-learning.com/courses/actix",
+    "platform": "SamplePlatform",
+    "domains": ["Backend Development"],
+    "tech_stack": {
+      "languages": ["Rust"],
+      "frameworks_libraries": ["Actix"],
+      "databases": ["PostgreSQL"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-104", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-104", "type": "TEACHES_DOMAIN", "target": "Backend Development"},
+      {"source": "SAMP-104", "type": "TEACHES_LANGUAGE", "target": "Rust"},
+      {"source": "SAMP-104", "type": "TEACHES_FRAMEWORK", "target": "Actix"},
+      {"source": "SAMP-104", "type": "TEACHES_DATABASE", "target": "PostgreSQL"}
+    ]
+  },
+  {
+    "course_id": "SAMP-105",
+    "title": "FastAPI Complete Professional Course",
+    "url": "https://example-learning.com/courses/fastapi",
+    "platform": "SamplePlatform",
+    "domains": ["Backend Development"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["FastAPI"],
+      "databases": ["MongoDB"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-105", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-105", "type": "TEACHES_DOMAIN", "target": "Backend Development"},
+      {"source": "SAMP-105", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-105", "type": "TEACHES_FRAMEWORK", "target": "FastAPI"},
+      {"source": "SAMP-105", "type": "TEACHES_DATABASE", "target": "MongoDB"}
+    ]
+  },
+  {
+    "course_id": "SAMP-106",
+    "title": "Docker Complete Professional Course",
+    "url": "https://example-learning.com/courses/docker",
+    "platform": "SamplePlatform",
+    "domains": ["DevOps"],
+    "tech_stack": {
+      "languages": ["Bash"],
+      "frameworks_libraries": ["Docker"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-106", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-106", "type": "TEACHES_DOMAIN", "target": "DevOps"},
+      {"source": "SAMP-106", "type": "TEACHES_LANGUAGE", "target": "Bash"},
+      {"source": "SAMP-106", "type": "TEACHES_FRAMEWORK", "target": "Docker"}
+    ]
+  },
+  {
+    "course_id": "SAMP-107",
+    "title": "Kubernetes Complete Professional Course",
+    "url": "https://example-learning.com/courses/kubernetes",
+    "platform": "SamplePlatform",
+    "domains": ["DevOps"],
+    "tech_stack": {
+      "languages": ["YAML"],
+      "frameworks_libraries": ["Kubernetes"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-107", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-107", "type": "TEACHES_DOMAIN", "target": "DevOps"},
+      {"source": "SAMP-107", "type": "TEACHES_LANGUAGE", "target": "YAML"},
+      {"source": "SAMP-107", "type": "TEACHES_FRAMEWORK", "target": "Kubernetes"}
+    ]
+  },
+  {
+    "course_id": "SAMP-108",
+    "title": "Terraform Complete Professional Course",
+    "url": "https://example-learning.com/courses/terraform",
+    "platform": "SamplePlatform",
+    "domains": ["DevOps"],
+    "tech_stack": {
+      "languages": ["HCL"],
+      "frameworks_libraries": ["Terraform"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-108", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-108", "type": "TEACHES_DOMAIN", "target": "DevOps"},
+      {"source": "SAMP-108", "type": "TEACHES_LANGUAGE", "target": "HCL"},
+      {"source": "SAMP-108", "type": "TEACHES_FRAMEWORK", "target": "Terraform"}
+    ]
+  },
+  {
+    "course_id": "SAMP-109",
+    "title": "Ansible Complete Professional Course",
+    "url": "https://example-learning.com/courses/ansible",
+    "platform": "SamplePlatform",
+    "domains": ["DevOps"],
+    "tech_stack": {
+      "languages": ["Bash"],
+      "frameworks_libraries": ["Ansible"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-109", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-109", "type": "TEACHES_DOMAIN", "target": "DevOps"},
+      {"source": "SAMP-109", "type": "TEACHES_LANGUAGE", "target": "Bash"},
+      {"source": "SAMP-109", "type": "TEACHES_FRAMEWORK", "target": "Ansible"}
+    ]
+  },
+  {
+    "course_id": "SAMP-110",
+    "title": "ArgoCD Complete Professional Course",
+    "url": "https://example-learning.com/courses/argocd",
+    "platform": "SamplePlatform",
+    "domains": ["DevOps"],
+    "tech_stack": {
+      "languages": ["YAML"],
+      "frameworks_libraries": ["ArgoCD"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-110", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-110", "type": "TEACHES_DOMAIN", "target": "DevOps"},
+      {"source": "SAMP-110", "type": "TEACHES_LANGUAGE", "target": "YAML"},
+      {"source": "SAMP-110", "type": "TEACHES_FRAMEWORK", "target": "ArgoCD"}
+    ]
+  },
+  {
+    "course_id": "SAMP-111",
+    "title": "AWS Lambda Complete Professional Course",
+    "url": "https://example-learning.com/courses/aws-lambda",
+    "platform": "SamplePlatform",
+    "domains": ["Cloud Engineering"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["AWS Lambda"],
+      "databases": ["DynamoDB"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-111", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-111", "type": "TEACHES_DOMAIN", "target": "Cloud Engineering"},
+      {"source": "SAMP-111", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-111", "type": "TEACHES_FRAMEWORK", "target": "AWS Lambda"},
+      {"source": "SAMP-111", "type": "TEACHES_DATABASE", "target": "DynamoDB"}
+    ]
+  },
+  {
+    "course_id": "SAMP-112",
+    "title": "Azure Functions Complete Professional Course",
+    "url": "https://example-learning.com/courses/azure-functions",
+    "platform": "SamplePlatform",
+    "domains": ["Cloud Engineering"],
+    "tech_stack": {
+      "languages": ["PowerShell"],
+      "frameworks_libraries": ["Azure Functions"],
+      "databases": ["Cosmos DB"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-112", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-112", "type": "TEACHES_DOMAIN", "target": "Cloud Engineering"},
+      {"source": "SAMP-112", "type": "TEACHES_LANGUAGE", "target": "PowerShell"},
+      {"source": "SAMP-112", "type": "TEACHES_FRAMEWORK", "target": "Azure Functions"},
+      {"source": "SAMP-112", "type": "TEACHES_DATABASE", "target": "Cosmos DB"}
+    ]
+  },
+  {
+    "course_id": "SAMP-113",
+    "title": "Cloud Run Complete Professional Course",
+    "url": "https://example-learning.com/courses/cloud-run",
+    "platform": "SamplePlatform",
+    "domains": ["Cloud Engineering"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Cloud Run"],
+      "databases": ["BigQuery"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-113", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-113", "type": "TEACHES_DOMAIN", "target": "Cloud Engineering"},
+      {"source": "SAMP-113", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-113", "type": "TEACHES_FRAMEWORK", "target": "Cloud Run"},
+      {"source": "SAMP-113", "type": "TEACHES_DATABASE", "target": "BigQuery"}
+    ]
+  },
+  {
+    "course_id": "SAMP-114",
+    "title": "CloudFormation Complete Professional Course",
+    "url": "https://example-learning.com/courses/cloudformation",
+    "platform": "SamplePlatform",
+    "domains": ["Cloud Engineering"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["CloudFormation"],
+      "databases": ["RDS"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-114", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-114", "type": "TEACHES_DOMAIN", "target": "Cloud Engineering"},
+      {"source": "SAMP-114", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-114", "type": "TEACHES_FRAMEWORK", "target": "CloudFormation"},
+      {"source": "SAMP-114", "type": "TEACHES_DATABASE", "target": "RDS"}
+    ]
+  },
+  {
+    "course_id": "SAMP-115",
+    "title": "Pulumi Complete Professional Course",
+    "url": "https://example-learning.com/courses/pulumi",
+    "platform": "SamplePlatform",
+    "domains": ["Cloud Engineering"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Pulumi"],
+      "databases": ["PostgreSQL"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-115", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-115", "type": "TEACHES_DOMAIN", "target": "Cloud Engineering"},
+      {"source": "SAMP-115", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-115", "type": "TEACHES_FRAMEWORK", "target": "Pulumi"},
+      {"source": "SAMP-115", "type": "TEACHES_DATABASE", "target": "PostgreSQL"}
+    ]
+  },
+  {
+    "course_id": "SAMP-116",
+    "title": "Apache Spark Complete Professional Course",
+    "url": "https://example-learning.com/courses/apache-spark",
+    "platform": "SamplePlatform",
+    "domains": ["Data Engineering"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Apache Spark"],
+      "databases": ["Snowflake"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-116", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-116", "type": "TEACHES_DOMAIN", "target": "Data Engineering"},
+      {"source": "SAMP-116", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-116", "type": "TEACHES_FRAMEWORK", "target": "Apache Spark"},
+      {"source": "SAMP-116", "type": "TEACHES_DATABASE", "target": "Snowflake"}
+    ]
+  },
+  {
+    "course_id": "SAMP-117",
+    "title": "Apache Kafka Complete Professional Course",
+    "url": "https://example-learning.com/courses/apache-kafka",
+    "platform": "SamplePlatform",
+    "domains": ["Data Engineering"],
+    "tech_stack": {
+      "languages": ["Java"],
+      "frameworks_libraries": ["Apache Kafka"],
+      "databases": ["PostgreSQL"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-117", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-117", "type": "TEACHES_DOMAIN", "target": "Data Engineering"},
+      {"source": "SAMP-117", "type": "TEACHES_LANGUAGE", "target": "Java"},
+      {"source": "SAMP-117", "type": "TEACHES_FRAMEWORK", "target": "Apache Kafka"},
+      {"source": "SAMP-117", "type": "TEACHES_DATABASE", "target": "PostgreSQL"}
+    ]
+  },
+  {
+    "course_id": "SAMP-118",
+    "title": "Apache Airflow Complete Professional Course",
+    "url": "https://example-learning.com/courses/apache-airflow",
+    "platform": "SamplePlatform",
+    "domains": ["Data Engineering"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Apache Airflow"],
+      "databases": ["Snowflake"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-118", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-118", "type": "TEACHES_DOMAIN", "target": "Data Engineering"},
+      {"source": "SAMP-118", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-118", "type": "TEACHES_FRAMEWORK", "target": "Apache Airflow"},
+      {"source": "SAMP-118", "type": "TEACHES_DATABASE", "target": "Snowflake"}
+    ]
+  },
+  {
+    "course_id": "SAMP-119",
+    "title": "Databricks Complete Professional Course",
+    "url": "https://example-learning.com/courses/databricks",
+    "platform": "SamplePlatform",
+    "domains": ["Data Engineering"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Databricks"],
+      "databases": ["Delta Lake"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-119", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-119", "type": "TEACHES_DOMAIN", "target": "Data Engineering"},
+      {"source": "SAMP-119", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-119", "type": "TEACHES_FRAMEWORK", "target": "Databricks"},
+      {"source": "SAMP-119", "type": "TEACHES_DATABASE", "target": "Delta Lake"}
+    ]
+  },
+  {
+    "course_id": "SAMP-120",
+    "title": "dbt Complete Professional Course",
+    "url": "https://example-learning.com/courses/dbt",
+    "platform": "SamplePlatform",
+    "domains": ["Data Engineering"],
+    "tech_stack": {
+      "languages": ["SQL"],
+      "frameworks_libraries": ["dbt"],
+      "databases": ["BigQuery"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-120", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-120", "type": "TEACHES_DOMAIN", "target": "Data Engineering"},
+      {"source": "SAMP-120", "type": "TEACHES_LANGUAGE", "target": "SQL"},
+      {"source": "SAMP-120", "type": "TEACHES_FRAMEWORK", "target": "dbt"},
+      {"source": "SAMP-120", "type": "TEACHES_DATABASE", "target": "BigQuery"}
+    ]
+  },
+  {
+    "course_id": "SAMP-121",
+    "title": "Pandas Complete Professional Course",
+    "url": "https://example-learning.com/courses/pandas",
+    "platform": "SamplePlatform",
+    "domains": ["Data Science"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Pandas"],
+      "databases": ["PostgreSQL"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-121", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-121", "type": "TEACHES_DOMAIN", "target": "Data Science"},
+      {"source": "SAMP-121", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-121", "type": "TEACHES_FRAMEWORK", "target": "Pandas"},
+      {"source": "SAMP-121", "type": "TEACHES_DATABASE", "target": "PostgreSQL"}
+    ]
+  },
+  {
+    "course_id": "SAMP-122",
+    "title": "NumPy Complete Professional Course",
+    "url": "https://example-learning.com/courses/numpy",
+    "platform": "SamplePlatform",
+    "domains": ["Data Science"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["NumPy"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-122", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-122", "type": "TEACHES_DOMAIN", "target": "Data Science"},
+      {"source": "SAMP-122", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-122", "type": "TEACHES_FRAMEWORK", "target": "NumPy"}
+    ]
+  },
+  {
+    "course_id": "SAMP-123",
+    "title": "SciPy Complete Professional Course",
+    "url": "https://example-learning.com/courses/scipy",
+    "platform": "SamplePlatform",
+    "domains": ["Data Science"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["SciPy"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-123", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-123", "type": "TEACHES_DOMAIN", "target": "Data Science"},
+      {"source": "SAMP-123", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-123", "type": "TEACHES_FRAMEWORK", "target": "SciPy"}
+    ]
+  },
+  {
+    "course_id": "SAMP-124",
+    "title": "Scikit-Learn Complete Professional Course",
+    "url": "https://example-learning.com/courses/scikit-learn",
+    "platform": "SamplePlatform",
+    "domains": ["Machine Learning"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Scikit-Learn"],
+      "databases": ["MongoDB"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-124", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-124", "type": "TEACHES_DOMAIN", "target": "Machine Learning"},
+      {"source": "SAMP-124", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-124", "type": "TEACHES_FRAMEWORK", "target": "Scikit-Learn"},
+      {"source": "SAMP-124", "type": "TEACHES_DATABASE", "target": "MongoDB"}
+    ]
+  },
+  {
+    "course_id": "SAMP-125",
+    "title": "TensorFlow Complete Professional Course",
+    "url": "https://example-learning.com/courses/tensorflow",
+    "platform": "SamplePlatform",
+    "domains": ["Machine Learning"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["TensorFlow"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-125", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-125", "type": "TEACHES_DOMAIN", "target": "Machine Learning"},
+      {"source": "SAMP-125", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-125", "type": "TEACHES_FRAMEWORK", "target": "TensorFlow"}
+    ]
+  },
+  {
+    "course_id": "SAMP-126",
+    "title": "PyTorch Complete Professional Course",
+    "url": "https://example-learning.com/courses/pytorch",
+    "platform": "SamplePlatform",
+    "domains": ["Machine Learning"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["PyTorch"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-126", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-126", "type": "TEACHES_DOMAIN", "target": "Machine Learning"},
+      {"source": "SAMP-126", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-126", "type": "TEACHES_FRAMEWORK", "target": "PyTorch"}
+    ]
+  },
+  {
+    "course_id": "SAMP-127",
+    "title": "XGBoost Complete Professional Course",
+    "url": "https://example-learning.com/courses/xgboost",
+    "platform": "SamplePlatform",
+    "domains": ["Machine Learning"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["XGBoost"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-127", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-127", "type": "TEACHES_DOMAIN", "target": "Machine Learning"},
+      {"source": "SAMP-127", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-127", "type": "TEACHES_FRAMEWORK", "target": "XGBoost"}
+    ]
+  },
+  {
+    "course_id": "SAMP-128",
+    "title": "LangChain Complete Professional Course",
+    "url": "https://example-learning.com/courses/langchain",
+    "platform": "SamplePlatform",
+    "domains": ["AI Engineering"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["LangChain"],
+      "databases": ["Pinecone"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-128", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-128", "type": "TEACHES_DOMAIN", "target": "AI Engineering"},
+      {"source": "SAMP-128", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-128", "type": "TEACHES_FRAMEWORK", "target": "LangChain"},
+      {"source": "SAMP-128", "type": "TEACHES_DATABASE", "target": "Pinecone"}
+    ]
+  },
+  {
+    "course_id": "SAMP-129",
+    "title": "LlamaIndex Complete Professional Course",
+    "url": "https://example-learning.com/courses/llamaindex",
+    "platform": "SamplePlatform",
+    "domains": ["AI Engineering"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["LlamaIndex"],
+      "databases": ["Weaviate"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-129", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-129", "type": "TEACHES_DOMAIN", "target": "AI Engineering"},
+      {"source": "SAMP-129", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-129", "type": "TEACHES_FRAMEWORK", "target": "LlamaIndex"},
+      {"source": "SAMP-129", "type": "TEACHES_DATABASE", "target": "Weaviate"}
+    ]
+  },
+  {
+    "course_id": "SAMP-130",
+    "title": "MLflow Complete Professional Course",
+    "url": "https://example-learning.com/courses/mlflow",
+    "platform": "SamplePlatform",
+    "domains": ["AI Engineering"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["MLflow"],
+      "databases": ["PostgreSQL"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-130", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-130", "type": "TEACHES_DOMAIN", "target": "AI Engineering"},
+      {"source": "SAMP-130", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-130", "type": "TEACHES_FRAMEWORK", "target": "MLflow"},
+      {"source": "SAMP-130", "type": "TEACHES_DATABASE", "target": "PostgreSQL"}
+    ]
+  },
+  {
+    "course_id": "SAMP-131",
+    "title": "Haystack Complete Professional Course",
+    "url": "https://example-learning.com/courses/haystack",
+    "platform": "SamplePlatform",
+    "domains": ["AI Engineering"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Haystack"],
+      "databases": ["Qdrant"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-131", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-131", "type": "TEACHES_DOMAIN", "target": "AI Engineering"},
+      {"source": "SAMP-131", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-131", "type": "TEACHES_FRAMEWORK", "target": "Haystack"},
+      {"source": "SAMP-131", "type": "TEACHES_DATABASE", "target": "Qdrant"}
+    ]
+  },
+  {
+    "course_id": "SAMP-132",
+    "title": "Metasploit Complete Professional Course",
+    "url": "https://example-learning.com/courses/metasploit",
+    "platform": "SamplePlatform",
+    "domains": ["Cybersecurity"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Metasploit"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-132", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-132", "type": "TEACHES_DOMAIN", "target": "Cybersecurity"},
+      {"source": "SAMP-132", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-132", "type": "TEACHES_FRAMEWORK", "target": "Metasploit"}
+    ]
+  },
+  {
+    "course_id": "SAMP-133",
+    "title": "Splunk Complete Professional Course",
+    "url": "https://example-learning.com/courses/splunk",
+    "platform": "SamplePlatform",
+    "domains": ["Cybersecurity"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Splunk"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-133", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-133", "type": "TEACHES_DOMAIN", "target": "Cybersecurity"},
+      {"source": "SAMP-133", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-133", "type": "TEACHES_FRAMEWORK", "target": "Splunk"}
+    ]
+  },
+  {
+    "course_id": "SAMP-134",
+    "title": "Open Policy Agent Complete Professional Course",
+    "url": "https://example-learning.com/courses/open-policy-agent",
+    "platform": "SamplePlatform",
+    "domains": ["Cybersecurity"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Open Policy Agent"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-134", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-134", "type": "TEACHES_DOMAIN", "target": "Cybersecurity"},
+      {"source": "SAMP-134", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-134", "type": "TEACHES_FRAMEWORK", "target": "Open Policy Agent"}
+    ]
+  },
+  {
+    "course_id": "SAMP-135",
+    "title": "Wireshark Complete Professional Course",
+    "url": "https://example-learning.com/courses/wireshark",
+    "platform": "SamplePlatform",
+    "domains": ["Cybersecurity"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Wireshark"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-135", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-135", "type": "TEACHES_DOMAIN", "target": "Cybersecurity"},
+      {"source": "SAMP-135", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-135", "type": "TEACHES_FRAMEWORK", "target": "Wireshark"}
+    ]
+  },
+  {
+    "course_id": "SAMP-136",
+    "title": "Burp Suite Complete Professional Course",
+    "url": "https://example-learning.com/courses/burp-suite",
+    "platform": "SamplePlatform",
+    "domains": ["Cybersecurity"],
+    "tech_stack": {
+      "languages": ["Python"],
+      "frameworks_libraries": ["Burp Suite"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-136", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-136", "type": "TEACHES_DOMAIN", "target": "Cybersecurity"},
+      {"source": "SAMP-136", "type": "TEACHES_LANGUAGE", "target": "Python"},
+      {"source": "SAMP-136", "type": "TEACHES_FRAMEWORK", "target": "Burp Suite"}
+    ]
+  },
+  {
+    "course_id": "SAMP-137",
+    "title": "Android SDK Complete Professional Course",
+    "url": "https://example-learning.com/courses/android-sdk",
+    "platform": "SamplePlatform",
+    "domains": ["Mobile Development"],
+    "tech_stack": {
+      "languages": ["Kotlin"],
+      "frameworks_libraries": ["Android SDK"],
+      "databases": ["SQLite"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-137", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-137", "type": "TEACHES_DOMAIN", "target": "Mobile Development"},
+      {"source": "SAMP-137", "type": "TEACHES_LANGUAGE", "target": "Kotlin"},
+      {"source": "SAMP-137", "type": "TEACHES_FRAMEWORK", "target": "Android SDK"},
+      {"source": "SAMP-137", "type": "TEACHES_DATABASE", "target": "SQLite"}
+    ]
+  },
+  {
+    "course_id": "SAMP-138",
+    "title": "SwiftUI Complete Professional Course",
+    "url": "https://example-learning.com/courses/swiftui",
+    "platform": "SamplePlatform",
+    "domains": ["Mobile Development"],
+    "tech_stack": {
+      "languages": ["Swift"],
+      "frameworks_libraries": ["SwiftUI"],
+      "databases": ["Core Data"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-138", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-138", "type": "TEACHES_DOMAIN", "target": "Mobile Development"},
+      {"source": "SAMP-138", "type": "TEACHES_LANGUAGE", "target": "Swift"},
+      {"source": "SAMP-138", "type": "TEACHES_FRAMEWORK", "target": "SwiftUI"},
+      {"source": "SAMP-138", "type": "TEACHES_DATABASE", "target": "Core Data"}
+    ]
+  },
+  {
+    "course_id": "SAMP-139",
+    "title": "Flutter Complete Professional Course",
+    "url": "https://example-learning.com/courses/flutter",
+    "platform": "SamplePlatform",
+    "domains": ["Mobile Development"],
+    "tech_stack": {
+      "languages": ["Dart"],
+      "frameworks_libraries": ["Flutter"],
+      "databases": ["Firebase"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-139", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-139", "type": "TEACHES_DOMAIN", "target": "Mobile Development"},
+      {"source": "SAMP-139", "type": "TEACHES_LANGUAGE", "target": "Dart"},
+      {"source": "SAMP-139", "type": "TEACHES_FRAMEWORK", "target": "Flutter"},
+      {"source": "SAMP-139", "type": "TEACHES_DATABASE", "target": "Firebase"}
+    ]
+  },
+  {
+    "course_id": "SAMP-140",
+    "title": "React Native Complete Professional Course",
+    "url": "https://example-learning.com/courses/react-native",
+    "platform": "SamplePlatform",
+    "domains": ["Mobile Development"],
+    "tech_stack": {
+      "languages": ["JavaScript"],
+      "frameworks_libraries": ["React Native"],
+      "databases": ["MongoDB"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-140", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-140", "type": "TEACHES_DOMAIN", "target": "Mobile Development"},
+      {"source": "SAMP-140", "type": "TEACHES_LANGUAGE", "target": "JavaScript"},
+      {"source": "SAMP-140", "type": "TEACHES_FRAMEWORK", "target": "React Native"},
+      {"source": "SAMP-140", "type": "TEACHES_DATABASE", "target": "MongoDB"}
+    ]
+  },
+  {
+    "course_id": "SAMP-141",
+    "title": "Prometheus Complete Professional Course",
+    "url": "https://example-learning.com/courses/prometheus",
+    "platform": "SamplePlatform",
+    "domains": ["SRE"],
+    "tech_stack": {
+      "languages": ["Go"],
+      "frameworks_libraries": ["Prometheus"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-141", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-141", "type": "TEACHES_DOMAIN", "target": "SRE"},
+      {"source": "SAMP-141", "type": "TEACHES_LANGUAGE", "target": "Go"},
+      {"source": "SAMP-141", "type": "TEACHES_FRAMEWORK", "target": "Prometheus"}
+    ]
+  },
+  {
+    "course_id": "SAMP-142",
+    "title": "Grafana Complete Professional Course",
+    "url": "https://example-learning.com/courses/grafana",
+    "platform": "SamplePlatform",
+    "domains": ["SRE"],
+    "tech_stack": {
+      "languages": ["Go"],
+      "frameworks_libraries": ["Grafana"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-142", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-142", "type": "TEACHES_DOMAIN", "target": "SRE"},
+      {"source": "SAMP-142", "type": "TEACHES_LANGUAGE", "target": "Go"},
+      {"source": "SAMP-142", "type": "TEACHES_FRAMEWORK", "target": "Grafana"}
+    ]
+  },
+  {
+    "course_id": "SAMP-143",
+    "title": "Ansible Complete Professional Course (SysAdmin)",
+    "url": "https://example-learning.com/courses/ansible-sysadmin",
+    "platform": "SamplePlatform",
+    "domains": ["System Administration"],
+    "tech_stack": {
+      "languages": ["Bash"],
+      "frameworks_libraries": ["Ansible"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-143", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-143", "type": "TEACHES_DOMAIN", "target": "System Administration"},
+      {"source": "SAMP-143", "type": "TEACHES_LANGUAGE", "target": "Bash"},
+      {"source": "SAMP-143", "type": "TEACHES_FRAMEWORK", "target": "Ansible"}
+    ]
+  },
+  {
+    "course_id": "SAMP-144",
+    "title": "Windows Server Complete Professional Course",
+    "url": "https://example-learning.com/courses/windows-server",
+    "platform": "SamplePlatform",
+    "domains": ["System Administration"],
+    "tech_stack": {
+      "languages": ["PowerShell"],
+      "frameworks_libraries": ["Windows Server"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-144", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-144", "type": "TEACHES_DOMAIN", "target": "System Administration"},
+      {"source": "SAMP-144", "type": "TEACHES_LANGUAGE", "target": "PowerShell"},
+      {"source": "SAMP-144", "type": "TEACHES_FRAMEWORK", "target": "Windows Server"}
+    ]
+  },
+  {
+    "course_id": "SAMP-145",
+    "title": "Selenium Complete Professional Course",
+    "url": "https://example-learning.com/courses/selenium",
+    "platform": "SamplePlatform",
+    "domains": ["QA Automation"],
+    "tech_stack": {
+      "languages": ["Java"],
+      "frameworks_libraries": ["Selenium"],
+      "databases": ["MySQL"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-145", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-145", "type": "TEACHES_DOMAIN", "target": "QA Automation"},
+      {"source": "SAMP-145", "type": "TEACHES_LANGUAGE", "target": "Java"},
+      {"source": "SAMP-145", "type": "TEACHES_FRAMEWORK", "target": "Selenium"},
+      {"source": "SAMP-145", "type": "TEACHES_DATABASE", "target": "MySQL"}
+    ]
+  },
+  {
+    "course_id": "SAMP-146",
+    "title": "Playwright Complete Professional Course",
+    "url": "https://example-learning.com/courses/playwright",
+    "platform": "SamplePlatform",
+    "domains": ["QA Automation"],
+    "tech_stack": {
+      "languages": ["TypeScript"],
+      "frameworks_libraries": ["Playwright"],
+      "databases": ["PostgreSQL"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-146", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-146", "type": "TEACHES_DOMAIN", "target": "QA Automation"},
+      {"source": "SAMP-146", "type": "TEACHES_LANGUAGE", "target": "TypeScript"},
+      {"source": "SAMP-146", "type": "TEACHES_FRAMEWORK", "target": "Playwright"},
+      {"source": "SAMP-146", "type": "TEACHES_DATABASE", "target": "PostgreSQL"}
+    ]
+  },
+  {
+    "course_id": "SAMP-147",
+    "title": "FreeRTOS Complete Professional Course",
+    "url": "https://example-learning.com/courses/freertos",
+    "platform": "SamplePlatform",
+    "domains": ["Embedded Systems"],
+    "tech_stack": {
+      "languages": ["C"],
+      "frameworks_libraries": ["FreeRTOS"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-147", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-147", "type": "TEACHES_DOMAIN", "target": "Embedded Systems"},
+      {"source": "SAMP-147", "type": "TEACHES_LANGUAGE", "target": "C"},
+      {"source": "SAMP-147", "type": "TEACHES_FRAMEWORK", "target": "FreeRTOS"}
+    ]
+  },
+  {
+    "course_id": "SAMP-148",
+    "title": "Arduino Complete Professional Course",
+    "url": "https://example-learning.com/courses/arduino",
+    "platform": "SamplePlatform",
+    "domains": ["Embedded Systems"],
+    "tech_stack": {
+      "languages": ["C++"],
+      "frameworks_libraries": ["Arduino"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-148", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-148", "type": "TEACHES_DOMAIN", "target": "Embedded Systems"},
+      {"source": "SAMP-148", "type": "TEACHES_LANGUAGE", "target": "C++"},
+      {"source": "SAMP-148", "type": "TEACHES_FRAMEWORK", "target": "Arduino"}
+    ]
+  },
+  {
+    "course_id": "SAMP-149",
+    "title": "Unity Complete Professional Course",
+    "url": "https://example-learning.com/courses/unity",
+    "platform": "SamplePlatform",
+    "domains": ["Game Development"],
+    "tech_stack": {
+      "languages": ["C#"],
+      "frameworks_libraries": ["Unity"],
+      "databases": [],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-149", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-149", "type": "TEACHES_DOMAIN", "target": "Game Development"},
+      {"source": "SAMP-149", "type": "TEACHES_LANGUAGE", "target": "C#"},
+      {"source": "SAMP-149", "type": "TEACHES_FRAMEWORK", "target": "Unity"}
+    ]
+  },
+  {
+    "course_id": "SAMP-150",
+    "title": "Hardhat Complete Professional Course",
+    "url": "https://example-learning.com/courses/hardhat",
+    "platform": "SamplePlatform",
+    "domains": ["Blockchain Development"],
+    "tech_stack": {
+      "languages": ["Solidity"],
+      "frameworks_libraries": ["Hardhat"],
+      "databases": ["Ethereum"],
+      "paradigms_architectures": []
+    },
+    "relationships": [
+      {"source": "SAMP-150", "type": "HOSTED_ON", "target": "SamplePlatform"},
+      {"source": "SAMP-150", "type": "TEACHES_DOMAIN", "target": "Blockchain Development"},
+      {"source": "SAMP-150", "type": "TEACHES_LANGUAGE", "target": "Solidity"},
+      {"source": "SAMP-150", "type": "TEACHES_FRAMEWORK", "target": "Hardhat"},
+      {"source": "SAMP-150", "type": "TEACHES_DATABASE", "target": "Ethereum"}
+    ]
+  }
+]

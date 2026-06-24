@@ -1,0 +1,441 @@
+{
+  "course_id":"CRS-003",
+  "title":"Spring Boot Microservices Masterclass",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Spring+Boot+Microservices+Masterclass",
+  "domains":["Backend Development"],
+  "tech_stack":{
+    "languages":["Java"],
+    "frameworks_libraries":["Spring Boot"],
+    "databases":["PostgreSQL"]
+  },
+  "relationships":[
+    {"source":"CRS-003","type":"TEACHES_LANGUAGE","target":"Java"},
+    {"source":"CRS-003","type":"TEACHES_FRAMEWORK","target":"Spring Boot"},
+    {"source":"CRS-003","type":"TEACHES_DATABASE","target":"PostgreSQL"}
+  ]
+}
+
+{
+  "course_id":"CRS-004",
+  "title":"Go Backend APIs",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Go+Backend+APIs",
+  "domains":["Backend Development"],
+  "tech_stack":{
+    "languages":["Go"],
+    "frameworks_libraries":["Gin"],
+    "databases":["PostgreSQL"]
+  },
+  "relationships":[
+    {"source":"CRS-004","type":"TEACHES_LANGUAGE","target":"Go"},
+    {"source":"CRS-004","type":"TEACHES_FRAMEWORK","target":"Gin"},
+    {"source":"CRS-004","type":"TEACHES_DATABASE","target":"PostgreSQL"}
+  ]
+}
+
+{
+  "course_id":"CRS-005",
+  "title":"Rust Services Engineering",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Rust+Services+Engineering",
+  "domains":["Backend Development"],
+  "tech_stack":{
+    "languages":["Rust"],
+    "frameworks_libraries":["Actix"],
+    "databases":["PostgreSQL"]
+  },
+  "relationships":[
+    {"source":"CRS-005","type":"TEACHES_LANGUAGE","target":"Rust"},
+    {"source":"CRS-005","type":"TEACHES_FRAMEWORK","target":"Actix"},
+    {"source":"CRS-005","type":"TEACHES_DATABASE","target":"PostgreSQL"}
+  ]
+}
+
+{
+  "course_id":"CRS-006",
+  "title":"Docker and Kubernetes Bootcamp",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Docker+and+Kubernetes+Bootcamp",
+  "domains":["DevOps"],
+  "tech_stack":{
+    "languages":["Bash"],
+    "frameworks_libraries":["Kubernetes"],
+    "databases":[]
+  },
+  "relationships":[
+    {"source":"CRS-006","type":"TEACHES_LANGUAGE","target":"Bash"},
+    {"source":"CRS-006","type":"TEACHES_FRAMEWORK","target":"Kubernetes"}
+  ]
+}
+
+{
+  "course_id":"CRS-007",
+  "title":"Terraform on AWS",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Terraform+on+AWS",
+  "domains":["Cloud Engineering"],
+  "tech_stack":{
+    "languages":["HCL"],
+    "frameworks_libraries":["Terraform"],
+    "databases":["DynamoDB"]
+  },
+  "relationships":[
+    {"source":"CRS-007","type":"TEACHES_LANGUAGE","target":"HCL"},
+    {"source":"CRS-007","type":"TEACHES_FRAMEWORK","target":"Terraform"},
+    {"source":"CRS-007","type":"TEACHES_DATABASE","target":"DynamoDB"}
+  ]
+}
+
+{
+  "course_id":"CRS-008",
+  "title":"Azure Cloud Engineer",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Azure+Cloud+Engineer",
+  "domains":["Cloud Engineering"],
+  "tech_stack":{
+    "languages":["PowerShell"],
+    "frameworks_libraries":["Azure Functions"],
+    "databases":["Cosmos DB"]
+  },
+  "relationships":[
+    {"source":"CRS-008","type":"TEACHES_LANGUAGE","target":"PowerShell"},
+    {"source":"CRS-008","type":"TEACHES_FRAMEWORK","target":"Azure Functions"},
+    {"source":"CRS-008","type":"TEACHES_DATABASE","target":"Cosmos DB"}
+  ]
+}
+
+{
+  "course_id":"CRS-009",
+  "title":"Google Cloud Architect",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Google+Cloud+Architect",
+  "domains":["Cloud Engineering"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["Cloud Run"],
+    "databases":["BigQuery"]
+  },
+  "relationships":[
+    {"source":"CRS-009","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-009","type":"TEACHES_FRAMEWORK","target":"Cloud Run"},
+    {"source":"CRS-009","type":"TEACHES_DATABASE","target":"BigQuery"}
+  ]
+}
+
+{
+  "course_id":"CRS-010",
+  "title":"Apache Spark Data Engineering",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Apache+Spark+Data+Engineering",
+  "domains":["Data Engineering"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["Apache Spark"],
+    "databases":["Snowflake"]
+  },
+  "relationships":[
+    {"source":"CRS-010","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-010","type":"TEACHES_FRAMEWORK","target":"Apache Spark"},
+    {"source":"CRS-010","type":"TEACHES_DATABASE","target":"Snowflake"}
+  ]
+}
+
+{
+  "course_id":"CRS-011",
+  "title":"Kafka Streaming Masterclass",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Kafka+Streaming+Masterclass",
+  "domains":["Data Engineering"],
+  "tech_stack":{
+    "languages":["Java"],
+    "frameworks_libraries":["Apache Kafka"],
+    "databases":["PostgreSQL"]
+  },
+  "relationships":[
+    {"source":"CRS-011","type":"TEACHES_LANGUAGE","target":"Java"},
+    {"source":"CRS-011","type":"TEACHES_FRAMEWORK","target":"Apache Kafka"},
+    {"source":"CRS-011","type":"TEACHES_DATABASE","target":"PostgreSQL"}
+  ]
+}
+
+{
+  "course_id":"CRS-012",
+  "title":"Airflow Pipelines",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Airflow+Pipelines",
+  "domains":["Data Engineering"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["Apache Airflow"],
+    "databases":["Snowflake"]
+  },
+  "relationships":[
+    {"source":"CRS-012","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-012","type":"TEACHES_FRAMEWORK","target":"Apache Airflow"},
+    {"source":"CRS-012","type":"TEACHES_DATABASE","target":"Snowflake"}
+  ]
+}
+
+{
+  "course_id":"CRS-013",
+  "title":"Machine Learning with Scikit-Learn",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Machine+Learning+with+Scikit-Learn",
+  "domains":["Machine Learning"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["Scikit-Learn"],
+    "databases":["MongoDB"]
+  },
+  "relationships":[
+    {"source":"CRS-013","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-013","type":"TEACHES_FRAMEWORK","target":"Scikit-Learn"},
+    {"source":"CRS-013","type":"TEACHES_DATABASE","target":"MongoDB"}
+  ]
+}
+
+{
+  "course_id":"CRS-014",
+  "title":"Deep Learning with TensorFlow",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Deep+Learning+with+TensorFlow",
+  "domains":["Machine Learning"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["TensorFlow"],
+    "databases":[]
+  },
+  "relationships":[
+    {"source":"CRS-014","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-014","type":"TEACHES_FRAMEWORK","target":"TensorFlow"}
+  ]
+}
+
+{
+  "course_id":"CRS-015",
+  "title":"PyTorch for Production",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=PyTorch+for+Production",
+  "domains":["Machine Learning"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["PyTorch"],
+    "databases":[]
+  },
+  "relationships":[
+    {"source":"CRS-015","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-015","type":"TEACHES_FRAMEWORK","target":"PyTorch"}
+  ]
+}
+
+{
+  "course_id":"CRS-016",
+  "title":"LLM Engineering and RAG",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=LLM+Engineering+and+RAG",
+  "domains":["AI Engineering"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["LangChain"],
+    "databases":["Pinecone"]
+  },
+  "relationships":[
+    {"source":"CRS-016","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-016","type":"TEACHES_FRAMEWORK","target":"LangChain"},
+    {"source":"CRS-016","type":"TEACHES_DATABASE","target":"Pinecone"}
+  ]
+}
+
+{
+  "course_id":"CRS-017",
+  "title":"Agentic AI Systems",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Agentic+AI+Systems",
+  "domains":["AI Engineering"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["LlamaIndex"],
+    "databases":["Weaviate"]
+  },
+  "relationships":[
+    {"source":"CRS-017","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-017","type":"TEACHES_FRAMEWORK","target":"LlamaIndex"},
+    {"source":"CRS-017","type":"TEACHES_DATABASE","target":"Weaviate"}
+  ]
+}
+
+{
+  "course_id":"CRS-018",
+  "title":"MLOps with MLflow",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=MLOps+with+MLflow",
+  "domains":["AI Engineering"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["MLflow"],
+    "databases":["PostgreSQL"]
+  },
+  "relationships":[
+    {"source":"CRS-018","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-018","type":"TEACHES_FRAMEWORK","target":"MLflow"},
+    {"source":"CRS-018","type":"TEACHES_DATABASE","target":"PostgreSQL"}
+  ]
+}
+
+{
+  "course_id":"CRS-019",
+  "title":"Ethical Hacking Bootcamp",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Ethical+Hacking+Bootcamp",
+  "domains":["Cybersecurity"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["Metasploit"],
+    "databases":[]
+  },
+  "relationships":[
+    {"source":"CRS-019","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-019","type":"TEACHES_FRAMEWORK","target":"Metasploit"}
+  ]
+}
+
+{
+  "course_id":"CRS-020",
+  "title":"SOC Analyst Training",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=SOC+Analyst+Training",
+  "domains":["Cybersecurity"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["Splunk"],
+    "databases":[]
+  },
+  "relationships":[
+    {"source":"CRS-020","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-020","type":"TEACHES_FRAMEWORK","target":"Splunk"}
+  ]
+}
+
+{
+  "course_id":"CRS-021",
+  "title":"Cloud Security Engineer",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Cloud+Security+Engineer",
+  "domains":["Cybersecurity"],
+  "tech_stack":{
+    "languages":["Python"],
+    "frameworks_libraries":["Open Policy Agent"],
+    "databases":[]
+  },
+  "relationships":[
+    {"source":"CRS-021","type":"TEACHES_LANGUAGE","target":"Python"},
+    {"source":"CRS-021","type":"TEACHES_FRAMEWORK","target":"Open Policy Agent"}
+  ]
+}
+
+{
+  "course_id":"CRS-022",
+  "title":"Android Kotlin Developer",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Android+Kotlin+Developer",
+  "domains":["Mobile Development"],
+  "tech_stack":{
+    "languages":["Kotlin"],
+    "frameworks_libraries":["Android SDK"],
+    "databases":["SQLite"]
+  },
+  "relationships":[
+    {"source":"CRS-022","type":"TEACHES_LANGUAGE","target":"Kotlin"},
+    {"source":"CRS-022","type":"TEACHES_FRAMEWORK","target":"Android SDK"},
+    {"source":"CRS-022","type":"TEACHES_DATABASE","target":"SQLite"}
+  ]
+}
+
+{
+  "course_id":"CRS-023",
+  "title":"iOS Swift Development",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=iOS+Swift+Development",
+  "domains":["Mobile Development"],
+  "tech_stack":{
+    "languages":["Swift"],
+    "frameworks_libraries":["SwiftUI"],
+    "databases":["Core Data"]
+  },
+  "relationships":[
+    {"source":"CRS-023","type":"TEACHES_LANGUAGE","target":"Swift"},
+    {"source":"CRS-023","type":"TEACHES_FRAMEWORK","target":"SwiftUI"},
+    {"source":"CRS-023","type":"TEACHES_DATABASE","target":"Core Data"}
+  ]
+}
+
+{
+  "course_id":"CRS-024",
+  "title":"Flutter Complete Guide",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Flutter+Complete+Guide",
+  "domains":["Mobile Development"],
+  "tech_stack":{
+    "languages":["Dart"],
+    "frameworks_libraries":["Flutter"],
+    "databases":["Firebase"]
+  },
+  "relationships":[
+    {"source":"CRS-024","type":"TEACHES_LANGUAGE","target":"Dart"},
+    {"source":"CRS-024","type":"TEACHES_FRAMEWORK","target":"Flutter"},
+    {"source":"CRS-024","type":"TEACHES_DATABASE","target":"Firebase"}
+  ]
+}
+
+{
+  "course_id":"CRS-025",
+  "title":"Site Reliability Engineering",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Site+Reliability+Engineering",
+  "domains":["SRE"],
+  "tech_stack":{
+    "languages":["Go"],
+    "frameworks_libraries":["Prometheus"],
+    "databases":[]
+  },
+  "relationships":[
+    {"source":"CRS-025","type":"TEACHES_LANGUAGE","target":"Go"},
+    {"source":"CRS-025","type":"TEACHES_FRAMEWORK","target":"Prometheus"}
+  ]
+}
+
+{
+  "course_id":"CRS-026",
+  "title":"Linux Systems Administration",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=Linux+Systems+Administration",
+  "domains":["System Administration"],
+  "tech_stack":{
+    "languages":["Bash"],
+    "frameworks_libraries":["Ansible"],
+    "databases":[]
+  },
+  "relationships":[
+    {"source":"CRS-026","type":"TEACHES_LANGUAGE","target":"Bash"},
+    {"source":"CRS-026","type":"TEACHES_FRAMEWORK","target":"Ansible"}
+  ]
+}
+
+{
+  "course_id":"CRS-027",
+  "title":"QA Automation with Selenium",
+  "platform":"Udemy",
+  "url":"https://www.udemy.com/courses/search/?q=QA+Automation+with+Selenium",
+  "domains":["QA Automation"],
+  "tech_stack":{
+    "languages":["Java"],
+    "frameworks_libraries":["Selenium"],
+    "databases":["MySQL"]
+  },
+  "relationships":[
+    {"source":"CRS-027","type":"TEACHES_LANGUAGE","target":"Java"},
+    {"source":"CRS-027","type":"TEACHES_FRAMEWORK","target":"Selenium"},
+    {"source":"CRS-027","type":"TEACHES_DATABASE","target":"MySQL"}
+  ]
+}

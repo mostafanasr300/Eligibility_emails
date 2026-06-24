@@ -199,6 +199,19 @@ class Neo4jGraphManager:
             print(f"Neo4j cache valid ({len(all_data)} courses) — skipping population.")
             return True
 
+        # Check Neo4j directly if cache file is missing (e.g. inside Docker)
+        if cached is None:
+            try:
+                with self.driver.session() as session:
+                    count_result = session.run("MATCH (c:Course) RETURN count(c) as count")
+                    course_count = count_result.single()["count"]
+                    if course_count == len(all_data):
+                        print(f"Neo4j already contains {course_count} courses. Skipping population.")
+                        set_neo4j_cache({"populated": True, "course_count": len(all_data)}, primary_path)
+                        return True
+            except Exception as e:
+                print(f"Error verifying Neo4j state: {e}")
+
         try:
             with self.driver.session() as session:
                 # Clear database
@@ -418,7 +431,7 @@ def get_graph_provider(data_path="Data&relation.txt"):
             manager = Neo4jGraphManager(uri, username, password)
             # Populate/initialize database with BOTH data files for consistency
             try:
-                data_paths = [data_path, "course_skill_graph_50_samples.json", "course_skill_graph_samples.json"]
+                data_paths = [data_path]
                 manager.populate_db(data_paths)
             except Exception:
                 pass
@@ -428,8 +441,8 @@ def get_graph_provider(data_path="Data&relation.txt"):
         except Exception as e:
             print(f"Neo4j connection attempt failed: {e}. Falling back to in-memory graph.")
 
-    # Fallback to local in-memory graph database using multiple data files
-    data_paths = [data_path, "course_skill_graph_50_samples.json", "course_skill_graph_samples.json"]
+    # Fallback to local in-memory graph database using single data file
+    data_paths = [data_path]
     print(f"Using local in-memory graph fallback. Data: {data_paths}")
     fallback = InMemoryGraphFallback(data_paths)
     _GRAPH_PROVIDER_CACHE = (fallback, "In-Memory Fallback")
