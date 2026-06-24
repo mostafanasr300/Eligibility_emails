@@ -1,5 +1,7 @@
 # AI Course Recommendation System (Hybrid RAG)
 
+> 🎯 **Scope:** This system is exclusively focused on **Software Engineering & Technology courses**. It is purpose-built to match SWE job descriptions with the most relevant tech courses across domains including Backend Development, Cloud Engineering, Data Engineering, Machine Learning, AI Engineering, Cybersecurity, Mobile Development, and more. Non-tech courses are out of scope by design.
+
 A powerful, Hybrid Retrieval-Augmented Generation (RAG) system designed to analyze job descriptions and recommend the most relevant educational courses. By blending semantic vector search with strict knowledge graph relationships, the application provides unparalleled accuracy in bridging the gap between required job skills and available educational content.
 
 ## Value Proposition
@@ -58,8 +60,10 @@ The application relies on `Data&relation.txt` as its source of truth. When the a
 **The CI/CD Flow (GitHub Actions + Hugging Face Spaces):**
 1. **Validation:** On every push, GitHub Actions runs Pytest (Unit/Integration tests), Flake8 (Linting), and Bandit (Security Scanning) utilizing external keys via GitHub Secrets.
 2. **Containerization:** The code is packaged into a Docker Image and pushed to the GitHub Container Registry (GHCR).
-3. **Deployment:** GitHub Actions pings the Hugging Face Spaces API to restart the Space. Hugging Face pulls the latest image and spins up the container.
+3. **Deployment (Git-based Sync):** Instead of using the HF REST API, GitHub Actions clones your HF Space repository using your `HF_TOKEN`, makes an empty commit, and pushes it. This triggers the Hugging Face build pipeline to pull the latest image from GHCR and deploy it — making the sync 100% reliable and immune to API permission errors.
 4. **Data Persistence:** The local `chroma_db` is committed to the repository and baked directly into the Docker image. Because Hugging Face Spaces provides free ephemeral hosting, any new data added at runtime is reset upon restart, but the baked-in database is always preserved!
+
+> **Required GitHub Secrets:** `GROQ_API_KEY`, `HF_TOKEN` (HF write-access token), `HF_SPACE` (format: `username/space-name`), `NEO4J_URI`, `NEO4J_USERNAME`, `NEO4J_PASSWORD`.
 
 ---
 
