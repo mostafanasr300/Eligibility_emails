@@ -8,6 +8,9 @@ from graph_db import get_graph_provider, get_graph_visualization_data
 from cache_manager import get_cache_stats, get_cached_query, set_cached_query
 from streamlit.components.v1 import html as st_html
 
+# Suppress LangChain USER_AGENT warning
+os.environ.setdefault("USER_AGENT", "EligibilityEmailsApp/1.0")
+
 # Custom CSS for high-end UI design
 CUSTOM_CSS = """
 <style>
