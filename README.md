@@ -41,9 +41,15 @@ The ranking system is the core of this application. It works by querying two com
 ### Visualizing the Knowledge Graph
 To help you understand exactly *why* a course was recommended, the application features a built-in interactive visualizer. 
 
-![Knowledge Graph](file:///c:/Users/mosta/Python_Projects/langchin_emails/knowledge_graph.png)
+[Explore the Interactive Knowledge Graph](file:///c:/Users/mosta/Python_Projects/langchin_emails/graph_viz_output.html)
 
 This interactive map allows you to explore the Neo4j database directly from the web app. You can see how specific courses (purple nodes) branch out and connect to the underlying skills, frameworks, and languages (green nodes) they teach. This provides full transparency into the AI's decision-making process.
+
+### Important: Hugging Face Secrets
+When deploying to Hugging Face Spaces, the environment variables (`GROQ_API_KEY`, `NEO4J_URI`, etc.) from your local `.env` file are not copied automatically. You **must** add these to your Hugging Face Space manually:
+1. Go to your Space on Hugging Face.
+2. Click **Settings** > **Variables and secrets**.
+3. Add your `GROQ_API_KEY`, `NEO4J_URI`, `NEO4J_USERNAME`, and `NEO4J_PASSWORD` as New Secrets.
 
 ## External Data & CI/CD Architecture
 

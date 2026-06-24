@@ -94,9 +94,13 @@ jobs:
       run: |
         if [ -n "$HF_TOKEN" ] && [ -n "$HF_SPACE" ]; then
           echo "Triggering Hugging Face Space restart..."
-          curl -X POST "https://huggingface.co/api/spaces/$HF_SPACE/restart" \
-            -H "Authorization: Bearer $HF_TOKEN"
-          echo -e "\nRestart triggered."
+          response=$(curl -s -o /dev/null -w "%{http_code}" -X POST "https://huggingface.co/api/spaces/$HF_SPACE/restart" -H "Authorization: Bearer $HF_TOKEN")
+          if [ "$response" -eq 200 ]; then
+            echo "Restart triggered successfully."
+          else
+            echo "Failed to trigger restart. HTTP response code: $response"
+            exit 1
+          fi
         else
           echo "Notice: HF_TOKEN or HF_SPACE secret is not set. Skipping Hugging Face Space restart."
         fi
