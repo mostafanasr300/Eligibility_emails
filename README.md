@@ -38,6 +38,13 @@ The ranking system is the core of this application. It works by querying two com
 
 **The Solution:** The Hybrid Score blends these together. A course only gets a top rank if it semantically matches the job *and* explicitly teaches the required skills.
 
+### Visualizing the Knowledge Graph
+To help you understand exactly *why* a course was recommended, the application features a built-in interactive visualizer. 
+
+![Knowledge Graph](file:///c:/Users/mosta/Python_Projects/langchin_emails/knowledge_graph.png)
+
+This interactive map allows you to explore the Neo4j database directly from the web app. You can see how specific courses (purple nodes) branch out and connect to the underlying skills, frameworks, and languages (green nodes) they teach. This provides full transparency into the AI's decision-making process.
+
 ## External Data & CI/CD Architecture
 
 The application relies on `Data&relation.txt` as its source of truth. When the application starts, it reads this file, structures it, and hydrates both Neo4j and ChromaDB.
