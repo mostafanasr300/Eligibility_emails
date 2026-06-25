@@ -5,6 +5,5 @@ __pycache__/
 .pytest_cache/
 .github/
 .git/
-.db_cache/
 tests/
 requirements-dev.txt

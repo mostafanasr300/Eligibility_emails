@@ -11,6 +11,9 @@ from streamlit.components.v1 import html as st_html
 # Suppress LangChain USER_AGENT warning
 os.environ.setdefault("USER_AGENT", "EligibilityEmailsApp/1.0")
 
+import logging
+logging.getLogger("neo4j").setLevel(logging.ERROR)
+
 # Custom CSS for high-end UI design
 CUSTOM_CSS = """
 <style>
