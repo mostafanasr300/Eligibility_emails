@@ -75,6 +75,9 @@ def creat_db(data_paths=None, reset=False):
         if reset or collection.count() != len(data):
             db.delete_collection(name="courses_links")
             collection = db.get_or_create_collection(name="courses_links")
+        else:
+            print(f"ChromaDB already contains {collection.count()} courses. Saving new cache.")
+            set_chroma_cache({"course_count": collection.count()}, data_paths[0])
     except Exception as e:
         print(f"Error managing collection: {e}")
         collection = db.get_or_create_collection(name="courses_links")
