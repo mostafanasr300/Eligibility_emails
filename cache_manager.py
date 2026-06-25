@@ -28,9 +28,15 @@ def _compute_file_hash(data_path: str) -> str:
     if not os.path.exists(data_path):
         return ""
     hasher = hashlib.sha256()
-    with open(data_path, "rb") as f:
-        for chunk in iter(lambda: f.read(65536), b""):
-            hasher.update(chunk)
+    try:
+        with open(data_path, "r", encoding="utf-8") as f:
+            content = f.read().replace("\r\n", "\n")
+            hasher.update(content.encode("utf-8"))
+    except UnicodeDecodeError:
+        # Fallback for non-text files if ever needed
+        with open(data_path, "rb") as f:
+            for chunk in iter(lambda: f.read(65536), b""):
+                hasher.update(chunk)
     return hasher.hexdigest()
 
 
