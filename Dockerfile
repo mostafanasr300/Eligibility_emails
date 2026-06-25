@@ -16,6 +16,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy source code
 COPY . .
 
+# Pre-download ChromaDB embedding model so it doesn't download at runtime
+RUN python -c "from chromadb.utils import embedding_functions; embedding_functions.DefaultEmbeddingFunction()(['test'])" || true
+
 # Expose Streamlit port
 EXPOSE 7860
 

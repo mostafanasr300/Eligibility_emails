@@ -135,6 +135,71 @@ class InMemoryGraphFallback:
         results.sort(key=lambda x: x["score"], reverse=True)
         return results
 
+    def get_graph_stats(self):
+        """Get graph statistics for visualization from in-memory fallback."""
+        course_count = len(self.courses)
+        skill_count = len([n for n, v in self.nodes.items() if v.get("label") == "Skill"])
+        rel_count = len(self.edges)
+        
+        from collections import Counter
+        skill_connections = Counter()
+        course_connections = Counter()
+        rel_types_count = Counter()
+        
+        for src, rel_type, tgt in self.edges:
+            if not is_course_id(src): skill_connections[src] += 1
+            if not is_course_id(tgt): skill_connections[tgt] += 1
+            if is_course_id(src): course_connections[src] += 1
+            if is_course_id(tgt): course_connections[tgt] += 1
+            rel_types_count[rel_type] += 1
+
+        top_skills = [{"skill": s, "connections": c} for s, c in skill_connections.most_common(20)]
+        top_courses = [{"title": self.courses.get(c, {}).get("title", c), "connections": count} for c, count in course_connections.most_common(10)]
+        rel_types = [{"rel_type": r, "count": c} for r, c in rel_types_count.most_common()]
+
+        return {
+            "course_count": course_count,
+            "skill_count": skill_count,
+            "relationship_count": rel_count,
+            "top_skills": top_skills,
+            "top_courses": top_courses,
+            "relationship_types": rel_types
+        }
+
+    def get_graph_pyvis(self, max_nodes=2000):
+        """Generate a PyVis graph visualization from in-memory data."""
+        try:
+            from pyvis.network import Network
+            net = Network(height='600px', width='100%', bgcolor='#1a1a2e', font_color='white')
+            net.barnes_hut(gravity=-8000, central_gravity=0.3, spring_length=250, spring_strength=0.001, damping=0.09)
+            
+            node_ids = set()
+            nodes_added = 0
+            for node_id, data in self.nodes.items():
+                if nodes_added >= max_nodes: break
+                label = data.get("label", "Unknown")
+                display_name = data.get("title") or data.get("name") or node_id
+                
+                node_ids.add(node_id)
+                if label == "Course":
+                    net.add_node(node_id, label=display_name, title=f"Course: {display_name}", color='#7000FF', size=25)
+                else:
+                    net.add_node(node_id, label=display_name, title=f"Skill: {display_name}", color='#00CC99', size=15)
+                nodes_added += 1
+
+            rels_added = 0
+            for src, rel_type, tgt in self.edges:
+                if rels_added >= max_nodes * 2: break
+                if src in node_ids and tgt in node_ids:
+                    rel_label = rel_type.replace("_", " ")
+                    net.add_edge(src, tgt, title=rel_label, color='#F87272')
+                    rels_added += 1
+            
+            return net.generate_html()
+        except Exception as e:
+            print(f"Error generating pyvis graph: {e}")
+            return f"<div style='color:red'>Error: {str(e)}</div>"
+
 
 class Neo4jGraphManager:
     def __init__(self, uri, username, password):
@@ -452,6 +517,6 @@ def get_graph_provider(data_path="Data&relation.txt"):
 def get_graph_visualization_data():
     """Get graph visualization data from the active provider."""
     provider, provider_name = get_graph_provider()
-    if provider_name == "Neo4j":
+    if provider is not None:
         return provider.get_graph_stats(), provider.get_graph_pyvis()
     return None, None

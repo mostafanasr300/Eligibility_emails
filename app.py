@@ -172,7 +172,7 @@ def render_pyvis(html_content):
             
         col_g1, col_g2 = st.columns([3, 1])
         with col_g2:
-            if st.button("🌐 Open Graph in New Tab", use_container_width=True):
+            if st.button("🌐 Open Graph in New Tab", width='stretch'):
                 import webbrowser
                 file_path = "file://" + os.path.abspath("graph_viz_output.html")
                 webbrowser.open_new_tab(file_path)
@@ -227,7 +227,7 @@ def display_graph_tab(provider, provider_name):
             skills_data = []
             for s in stats["top_skills"][:10]:
                 skills_data.append({"Skill": s["skill"], "Courses Connected": s["connections"]})
-            st.dataframe(skills_data, use_container_width=True, hide_index=True)
+            st.dataframe(skills_data, width='stretch', hide_index=True)
         
         # Top Courses by Connections
         st.markdown("### 🏆 Top Courses by Connections")
@@ -235,7 +235,7 @@ def display_graph_tab(provider, provider_name):
             courses_data = []
             for c in stats["top_courses"][:5]:
                 courses_data.append({"Course": c["title"], "Skills Covered": c["connections"]})
-            st.dataframe(courses_data, use_container_width=True, hide_index=True)
+            st.dataframe(courses_data, width='stretch', hide_index=True)
         
         # Relationship Type Distribution
         st.markdown("### 🔗 Relationship Distribution")
@@ -243,7 +243,7 @@ def display_graph_tab(provider, provider_name):
             rel_data = []
             for r in stats["relationship_types"]:
                 rel_data.append({"Relationship Type": r["rel_type"], "Count": r["count"]})
-            st.dataframe(rel_data, use_container_width=True, hide_index=True)
+            st.dataframe(rel_data, width='stretch', hide_index=True)
         
         # PyVis Graph
         st.markdown("### 📊 Graph Visualization (PyVis)")
@@ -367,7 +367,7 @@ def create_streamlit_app():
     col1, col2 = st.columns([1, 1])
     with col1:
         custom_jd_input = st.text_area("Or Paste Raw Job Description text (optional):", height=120)
-    submit_button = st.button("🚀 Run Hybrid Matcher", use_container_width=True)
+    submit_button = st.button("🚀 Run Hybrid Matcher", width='stretch')
 
     if submit_button:
         with st.spinner("Analyzing job posting, running queries, and building hybrid recommendations..."):
