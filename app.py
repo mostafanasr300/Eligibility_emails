@@ -168,21 +168,17 @@ def render_pyvis(html_content):
         return
     
     try:
-        # Save to file so it can be opened
-        import os
-        with open("graph_viz_output.html", "w", encoding="utf-8") as f:
-            f.write(html_content)
-            
         col_g1, col_g2 = st.columns([3, 1])
         with col_g2:
-            if st.button("🌐 Open Graph in New Tab", width='stretch'):
-                import webbrowser
-                file_path = "file://" + os.path.abspath("graph_viz_output.html")
-                webbrowser.open_new_tab(file_path)
+            st.download_button(
+                label="⬇️ Download Graph HTML",
+                data=html_content,
+                file_name="knowledge_graph.html",
+                mime="text/html",
+                use_container_width=True
+            )
 
-        # Removed inline HTML for performance
-        # st.components.v1.html(html_content, height=650, scrolling=True)
-        st.info("💡 **Performance Mode:** The graph visualization is large (2000+ nodes) and has been detached from the main UI to keep this app running fast. Click the button above to explore the interactive graph in a dedicated window.")
+        st.info("💡 **Performance Mode:** The graph visualization is large (2000+ nodes) and has been detached from the main UI to keep this app running fast. Click the download button above, then open the HTML file in your browser to explore the interactive graph.")
     except Exception as e:
         st.error(f"Could not render graph visualization: {e}")
 
