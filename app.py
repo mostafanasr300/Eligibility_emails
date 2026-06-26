@@ -365,7 +365,7 @@ def create_streamlit_app():
     url_input = st.text_input("Enter Job URL:", value=default_job_link)
     col1, col2 = st.columns([1, 1])
     with col1:
-        custom_jd_input = st.text_area("Or Paste Raw Job Description text (optional):", height=120)
+        custom_jd_input = st.text_area("Or Paste Raw Job Description text (optional BUT recommended for accurate results):", height=120)
     submit_button = st.button("🚀 Run Hybrid Matcher", width='stretch')
 
     if submit_button:
@@ -382,28 +382,45 @@ def create_streamlit_app():
                 llm = main.prepare_model()
                 page_content = ""
 
+                # Cache key generation based on input
+                import hashlib
+                query_key = ""
                 if custom_jd_input.strip():
-                    # User pasted raw job description - use directly
+                    query_key = "text_" + hashlib.md5(custom_jd_input.strip().encode()).hexdigest()
                     page_content = custom_jd_input
-                    st.info("📝 Using pasted job description text.")
                 else:
-                    # URL provided - use enhanced loading with job-specific filtering
-                    st.info("🌐 Loading and analyzing job posting from URL...")
-                    
-                    # Step 1: Load the raw page
-                    raw_page_data = main.web_loader(url_input)
-                    raw_content_str = main._build_content_str(raw_page_data)
-                    st.info(f"📄 Page loaded ({len(raw_content_str):,} chars) — filtering job content...")
-                    
-                    # Detect block/captcha
-                    is_blocked = False
-                    if len(raw_content_str) < 500 or any(x in raw_content_str for x in ["Cloudflare", "Enable JavaScript", "Attention Required!", "Access Denied"]):
-                        is_blocked = True
-                        st.warning("⚠️ **Anti-Bot Protection Detected:** The website appears to have blocked our automatic scraper (very common for Indeed/LinkedIn). Please try running it again, or **copy and paste the raw job description text** into the text area for immediate results.")
-                    
-                    # Step 2: Use LLM to rephrase & organize the job content
-                    # Extract keywords AND keep all info organized
-                    rephrase_prompt = f"""
+                    query_key = "url_" + hashlib.md5(url_input.strip().encode()).hexdigest()
+
+                # Check Query Cache
+                cached_data = get_cached_query(query_key)
+                if cached_data:
+                    st.info("⚡ Loaded results directly from Query Cache!")
+                    job_json = cached_data.get("job_json", {})
+                    results = cached_data.get("results", {})
+                    email_content = cached_data.get("email_content", "")
+                    page_content = cached_data.get("page_content_raw", "")
+                else:
+                    if custom_jd_input.strip():
+                        # User pasted raw job description - use directly
+                        st.info("📝 Using pasted job description text.")
+                    else:
+                        # URL provided - use enhanced loading with job-specific filtering
+                        st.info("🌐 Loading and analyzing job posting from URL...")
+                        
+                        # Step 1: Load the raw page
+                        raw_page_data = main.web_loader(url_input)
+                        raw_content_str = main._build_content_str(raw_page_data)
+                        st.info(f"📄 Page loaded ({len(raw_content_str):,} chars) — filtering job content...")
+                        
+                        # Detect block/captcha
+                        is_blocked = False
+                        if len(raw_content_str) < 500 or any(x in raw_content_str for x in ["Cloudflare", "Enable JavaScript", "Attention Required!", "Access Denied"]):
+                            is_blocked = True
+                            st.warning("⚠️ **Anti-Bot Protection Detected:** The website appears to have blocked our automatic scraper (very common for Indeed/LinkedIn). Please try running it again, or **copy and paste the raw job description text** into the text area for immediate results.")
+                        
+                        # Step 2: Use LLM to rephrase & organize the job content
+                        # Extract keywords AND keep all info organized
+                        rephrase_prompt = f"""
 You are a job description rephrasing specialist. Below is the raw HTML/text scraped from a job posting website.
 
 Your task: EXTRACT and ORGANIZE the job information into a clean structured description.
@@ -426,48 +443,58 @@ Rules:
 RAW PAGE CONTENT:
 {raw_content_str[:15000]}
 """
-                    try:
-                        rephrase_response = llm.invoke(rephrase_prompt)
-                        if hasattr(rephrase_response, "content"):
-                            rephrased_content = rephrase_response.content
-                        else:
-                            rephrased_content = str(rephrase_response)
-                        if rephrased_content.strip() and len(rephrased_content.strip()) > 100:
-                            page_content = rephrased_content
-                            st.info(f"✅ Job content rephrased and organized ({len(rephrased_content):,} chars)")
-                        else:
+                        try:
+                            rephrase_response = llm.invoke(rephrase_prompt)
+                            if hasattr(rephrase_response, "content"):
+                                rephrased_content = rephrase_response.content
+                            else:
+                                rephrased_content = str(rephrase_response)
+                            if rephrased_content.strip() and len(rephrased_content.strip()) > 100:
+                                page_content = rephrased_content
+                                st.info(f"✅ Job content rephrased and organized ({len(rephrased_content):,} chars)")
+                            else:
+                                page_content = raw_content_str
+                                st.info("⚠️ Using raw page content (rephrasing produced minimal output)")
+                        except Exception:
                             page_content = raw_content_str
-                            st.info("⚠️ Using raw page content (rephrasing produced minimal output)")
-                    except Exception:
-                        page_content = raw_content_str
-                        st.info("⚠️ Using raw page content (rephrasing step failed)")
+                            st.info("⚠️ Using raw page content (rephrasing step failed)")
 
-                job_json = main.jop_prompt(llm, page_content)
+                    job_json = main.jop_prompt(llm, page_content)
 
-                # Validate extracted job JSON
-                extracted_skills = job_json.get('skills') if isinstance(job_json, dict) else None
-                if extracted_skills is None:
-                    extracted_skills = []
-                if isinstance(extracted_skills, str):
-                    extracted_skills = [extracted_skills]
+                    # Validate extracted job JSON
+                    extracted_skills = job_json.get('skills') if isinstance(job_json, dict) else None
+                    if extracted_skills is None:
+                        extracted_skills = []
+                    if isinstance(extracted_skills, str):
+                        extracted_skills = [extracted_skills]
 
-                role_val = (job_json.get('role') or '').strip() if isinstance(job_json, dict) else ''
-                description_val = (job_json.get('description') or '').strip() if isinstance(job_json, dict) else ''
+                    role_val = (job_json.get('role') or '').strip() if isinstance(job_json, dict) else ''
+                    description_val = (job_json.get('description') or '').strip() if isinstance(job_json, dict) else ''
 
-                if not role_val and not description_val and not any(s.strip() for s in extracted_skills):
-                    st.warning('The provided URL/text did not extract a valid job posting. Please provide a different job link or paste the job description text.')
-                    st.session_state['job_json'] = job_json
-                    st.session_state['page_content_raw'] = page_content
-                    return
+                    if not role_val and not description_val and not any(s.strip() for s in extracted_skills):
+                        st.warning('The provided URL/text did not extract a valid job posting. Please provide a different job link or paste the job description text.')
+                        st.session_state['job_json'] = job_json
+                        st.session_state['page_content_raw'] = page_content
+                        st.rerun()
+                        return
 
-                # Use cached collection
-                collection = st.session_state["chroma_collection"]
-                if collection is None:
-                    collection = creat_db()
-                    st.session_state["chroma_collection"] = collection
-                
-                results = main.apply_query(job_json, collection, w_vector, w_graph, top_k=top_k)
-                email_content = main.email_prompt(llm, job_json, results["hybrid"])
+                    # Use cached collection
+                    collection = st.session_state.get("chroma_collection")
+                    if collection is None:
+                        collection = creat_db()
+                        st.session_state["chroma_collection"] = collection
+                    
+                    results = main.apply_query(job_json, collection, w_vector, w_graph, top_k=top_k)
+                    email_content = main.email_prompt(llm, job_json, results["hybrid"])
+
+                    # Save to Query Cache
+                    set_cached_query(query_key, {
+                        "job_json": job_json,
+                        "results": results,
+                        "email_content": email_content,
+                        "page_content_raw": page_content,
+                        "role": role_val
+                    })
 
                 st.session_state["job_json"] = job_json
                 st.session_state["results"] = results

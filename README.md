@@ -53,7 +53,7 @@ Our system doesn't just pass strings to a database. It utilizes a Large Language
 ### Visualizing the Knowledge Graph
 To help you understand exactly *why* a course was recommended, the application features a built-in interactive visualizer. 
 
-[Explore the Interactive Knowledge Graph](file:///c:/Users/mosta/Python_Projects/langchin_emails/graph_vis.html)
+Once generated from the UI, you can download and view the interactive map. If you already generated it locally, you can [Explore the Interactive Knowledge Graph](knowledge_graph.html) directly (assuming it was saved in your root directory).
 
 This interactive map allows you to explore the Neo4j database directly from the web app. You can see how specific courses (purple nodes) branch out and connect to the underlying skills, frameworks, and languages (green nodes) they teach. This provides full transparency into the AI's decision-making process.
 
