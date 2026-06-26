@@ -53,7 +53,8 @@ Our system doesn't just pass strings to a database. It utilizes a Large Language
 ### Visualizing the Knowledge Graph
 To help you understand exactly *why* a course was recommended, the application features a built-in interactive visualizer. 
 
-Once generated from the UI, you can download and view the interactive map. If you already generated it locally, you can [Explore the Interactive Knowledge Graph](knowledge_graph.html) directly (assuming it was saved in your root directory).
+Once generated from the UI, you can download and view the interactive map. You can also view our pre-generated snapshot directly in your browser: 
+[✨ Explore the Interactive Knowledge Graph ✨](https://htmlpreview.github.io/?https://github.com/mostafanasr300/Eligibility_emails/blob/main/knowledge_graph.html)
 
 This interactive map allows you to explore the Neo4j database directly from the web app. You can see how specific courses (purple nodes) branch out and connect to the underlying skills, frameworks, and languages (green nodes) they teach. This provides full transparency into the AI's decision-making process.
 

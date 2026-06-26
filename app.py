@@ -312,6 +312,10 @@ def create_streamlit_app():
     st.markdown('<div class="main-title"> Hybrid RAG Job Eligibility System</div>', unsafe_allow_html=True)
     st.markdown('<div class="subtitle">Match candidates to job descriptions using combined Vector & Knowledge Graph Search</div>', unsafe_allow_html=True)
 
+    if st.session_state.get("cache_used", False):
+        st.success("⚡ **Loaded results instantly from Query Cache!** (Identical input and weights detected)")
+        st.session_state["cache_used"] = False
+
     st.sidebar.markdown("### 🛠️ Configuration & Status")
 
     # Cache ChromaDB collection in session_state to prevent re-initialization
@@ -382,19 +386,19 @@ def create_streamlit_app():
                 llm = main.prepare_model()
                 page_content = ""
 
-                # Cache key generation based on input
+                # Cache key generation based on input AND weights
                 import hashlib
                 query_key = ""
                 if custom_jd_input.strip():
-                    query_key = "text_" + hashlib.md5(custom_jd_input.strip().encode()).hexdigest()
+                    query_key = "text_" + hashlib.md5(f"{custom_jd_input.strip()}_{w_vector}_{w_graph}_{top_k}".encode()).hexdigest()
                     page_content = custom_jd_input
                 else:
-                    query_key = "url_" + hashlib.md5(url_input.strip().encode()).hexdigest()
+                    query_key = "url_" + hashlib.md5(f"{url_input.strip()}_{w_vector}_{w_graph}_{top_k}".encode()).hexdigest()
 
                 # Check Query Cache
                 cached_data = get_cached_query(query_key)
                 if cached_data:
-                    st.info("⚡ Loaded results directly from Query Cache!")
+                    st.session_state["cache_used"] = True
                     job_json = cached_data.get("job_json", {})
                     results = cached_data.get("results", {})
                     email_content = cached_data.get("email_content", "")
