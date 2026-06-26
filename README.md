@@ -32,13 +32,23 @@ The ranking system is the core of this application. It works by querying two com
 
 **ChromaDB (Vector Database)**
 * **The Problem it Solves:** "Semantic Search." If a job asks for a "Frontend Web Developer," ChromaDB understands that a course on "HTML/CSS and UI Design" is highly relevant, even if the exact keywords don't match. It understands the *meaning* of the text.
-* **How it Ranks:** It uses LLM embeddings to calculate the cosine similarity (Vector Score) between the job description and the course description.
+* **The Advantage of ChromaDB:** Unlike cloud-hosted enterprise vector databases (Pinecone, Weaviate) which require expensive API calls and constant internet connectivity, ChromaDB is lightweight, runs fully local, and operates in-memory/on-disk via SQLite. It is lightning fast, zero-configuration, completely free, and bakes perfectly into our Docker container for a standalone deployment.
+* **How it Ranks:** It uses LLM embeddings to calculate the cosine similarity (Vector Score) between the job description and the course description. The score scales based on absolute vector proximity.
 
 **Neo4j (Knowledge Graph)**
 * **The Problem it Solves:** "Hard Requirements." If a job strictly requires "Vue.js", semantic search might accidentally recommend a "React" course because they are similar. Neo4j acts as a hard filter. It traverses relationships (`COURSE` -> `TEACHES` -> `SKILL`) to find exact matches.
 * **How it Ranks:** It calculates a Graph Score based on how many explicit skills from the job description are structurally linked to the course in the database.
 
-**The Solution:** The Hybrid Score blends these together. A course only gets a top rank if it semantically matches the job *and* explicitly teaches the required skills.
+**The Solution: The Hybrid Score**
+The Hybrid Score elegantly blends these approaches. 
+* **Course Score Calculation:** The final recommendation isn't just a list—it's mathematically weighted. By adjusting the slider in the UI, you control how much the Vector Score (Semantic) and Graph Score (Exact Match) contribute.
+* **Formula:** `Final Score = (Vector Score * Vector Weight) + (Graph Score * Graph Weight)`. This ensures a course only gets a top rank if it semantically aligns with the job *and* explicitly teaches the required tools.
+
+### The Role of the AI (LLM) and Tool Usage
+Our system doesn't just pass strings to a database. It utilizes a Large Language Model (like Llama 3 via Groq) acting as a smart orchestrator:
+1. **Information Extraction (Scraping & Parsing):** The LLM takes a raw HTML job posting url and structurally dissects it. It navigates anti-bot protections, extracts the true intent of the posting, and isolates explicit constraints (e.g. Years of Experience, Role Title).
+2. **Entity Recognition:** It actively distills paragraphs of text into exact "Skill" nodes (e.g. converting "experience with modern js frameworks" into specific entities like `React`, `Vue`, `Angular`).
+3. **Query Orchestration:** The LLM builds the actual search parameters used against both ChromaDB and Neo4j, taking unstructured human text and turning it into machine-readable query criteria to fetch the ultimate recommendations.
 
 ### Visualizing the Knowledge Graph
 To help you understand exactly *why* a course was recommended, the application features a built-in interactive visualizer. 

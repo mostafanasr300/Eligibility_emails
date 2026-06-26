@@ -414,7 +414,7 @@ class Neo4jGraphManager:
             print(f"Error getting graph stats: {e}")
             return None
 
-    def get_graph_pyvis(self, max_nodes=2000):
+    def get_graph_pyvis(self, max_nodes=5000):
         """Generate a PyVis graph visualization from Neo4j data."""
         if not self.driver:
             return None
@@ -427,7 +427,7 @@ class Neo4jGraphManager:
                 ).data()
                 
                 rels_result = session.run(
-                    f"MATCH (a)-[r]->(b) RETURN a.id AS src_id, a.name AS src_name, type(r) AS rel_type, b.id AS tgt_id, b.name AS tgt_name LIMIT {max_nodes * 2}"
+                    f"MATCH (a)-[r]->(b) RETURN a.id AS src_id, a.name AS src_name, type(r) AS rel_type, b.id AS tgt_id, b.name AS tgt_name LIMIT {max_nodes * 3}"
                 ).data()
                 
             net = Network(height='600px', width='100%', bgcolor='#1a1a2e', font_color='white')
