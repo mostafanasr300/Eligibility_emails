@@ -20,8 +20,10 @@ This ensures learners do not waste time on irrelevant courses, and hiring manage
 ### 2. Streamlit User Interface
 * **What it delivers:** A clean, interactive web frontend. Users can paste a job description directly into the UI, adjust the weighting between the Graph and Vector databases, and instantly see visual course recommendations and skill trees.
 
-### 3. Smart Caching System
-* **What it delivers:** Eliminates long startup times. By hashing the source data files, the application caches both the Vector and Graph states. If the container restarts, it loads instantly. It only rebuilds the database if the underlying data files change.
+### 3. Dual-Layer Smart Caching System
+* **What it delivers:** Eliminates long startup times and redundant AI API calls. 
+  * **Database Cache:** By hashing the source data files, the application caches both the Vector and Graph states. If the container restarts, it loads instantly. It only rebuilds the databases if the underlying data files change.
+  * **Query Cache:** When you search a job posting, the exact URL (or raw text) combined with your Graph/Vector slider weights are cryptographically hashed. If you query the same job with the same weights within an hour, the system entirely bypasses the LLM and Database lookups, returning results in under 0.1 seconds!
 
 ### 4. Automated CI/CD Pipeline
 * **What it delivers:** Enterprise-grade automation. Every push to the main branch is automatically linted, security scanned, tested, built into a Docker container, and deployed seamlessly to production.
@@ -54,7 +56,7 @@ Our system doesn't just pass strings to a database. It utilizes a Large Language
 To help you understand exactly *why* a course was recommended, the application features a built-in interactive visualizer. 
 
 Once generated from the UI, you can download and view the interactive map. You can also view our pre-generated snapshot directly in your browser: 
-[✨ Explore the Interactive Knowledge Graph ✨](https://htmlpreview.github.io/?https://github.com/mostafanasr300/Eligibility_emails/blob/main/knowledge_graph.html)
+[✨ Explore the Interactive Knowledge Graph ✨](https://raw.githack.com/mostafanasr300/Eligibility_emails/main/knowledge_graph.html)
 
 This interactive map allows you to explore the Neo4j database directly from the web app. You can see how specific courses (purple nodes) branch out and connect to the underlying skills, frameworks, and languages (green nodes) they teach. This provides full transparency into the AI's decision-making process.
 
