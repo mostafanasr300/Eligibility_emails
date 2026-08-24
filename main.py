@@ -46,9 +46,9 @@ def web_loader(jop_link):
 
 def prepare_model():
     load_dotenv()
-    llama_key = os.getenv("GROQ_API_KEY")
-    if not llama_key:
-        raise ValueError("Llama API key not found in environment. Please check your .env file.")
+    groq_key = os.getenv("GROQ_API_KEY")
+    if not groq_key:
+        raise ValueError("GROQ_API_KEY not found in environment. Please check your .env file.")
     try:
         from langchain_groq import ChatGroq
     except Exception as e:
@@ -59,9 +59,9 @@ def prepare_model():
         )
 
     llm = ChatGroq(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         temperature=1.0,
-        api_key=llama_key
+        api_key=groq_key
     )
     return llm
 
